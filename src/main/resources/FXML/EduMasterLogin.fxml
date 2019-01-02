@@ -10,40 +10,55 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controller.EduMasterLoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EduMasterLoginController">
    <children>
-      <ImageView fitHeight="1377.0" fitWidth="1608.0" layoutX="-454.0" layoutY="-393.0" pickOnBounds="true">
+      <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true">
          <image>
-            <Image url="@../styles/images/network.png" />
+            <Image url="@../styles/images/SplashS.jpg" />
          </image>
       </ImageView>
       <VBox alignment="CENTER" fillWidth="false" layoutX="307.0" layoutY="173.0" prefHeight="620.0" prefWidth="445.0" spacing="10.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fitHeight="150.0" fitWidth="425.0" pickOnBounds="true" translateY="-35.0">
                <image>
-                  <Image url="@../styles/images/sidepanelLogo.jpg" />
+                  <Image url="@../styles/images/sidepanelLogo.png" />
                </image></ImageView>
             <AnchorPane prefHeight="225.0" prefWidth="500.0">
                <children>
-                  <AnchorPane layoutY="20.0" prefHeight="300.0" prefWidth="400.0" styleClass="box-login" stylesheets="@../styles/EduAPP.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="13.0">
+                  <AnchorPane fx:id="registerPane" prefHeight="300.0" prefWidth="400.0" styleClass="box-login" stylesheets="@../styles/EduAPP.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="13.0">
                      <children>
-                        <TextField layoutX="14.0" layoutY="65.0" prefHeight="25.0" prefWidth="472.0" promptText="Username" />
+                        <TextField fx:id="userRegister" layoutX="14.0" layoutY="65.0" prefHeight="25.0" prefWidth="472.0" promptText="Username" />
+                        <Label layoutX="164.0" layoutY="14.0" prefHeight="28.0" prefWidth="175.0" text="Register Information" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="userRPassword" layoutX="14.0" layoutY="104.0" prefHeight="25.0" prefWidth="472.0" promptText="Password" styleClass="password" />
+                        <Button fx:id="registerBtn" layoutX="25.0" layoutY="165.0" mnemonicParsing="false" onAction="#Register" prefHeight="28.0" prefWidth="163.0" style="-fx-background-color: transparent; -fx-border-radius: 120px; -fx-border-color: white;" text="Register" textFill="#0099ff" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="24.0" />
+                        <Button fx:id="bLoginBtn" layoutX="314.0" layoutY="144.0" mnemonicParsing="false" onAction="#loginForm" prefHeight="28.0" prefWidth="163.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 120px;" text="&lt;-- Login" textFill="#0099ff" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="loginPane" layoutY="20.0" prefHeight="300.0" prefWidth="400.0" styleClass="box-login" stylesheets="@../styles/EduAPP.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="13.0">
+                     <children>
+                        <TextField fx:id="userName" layoutX="14.0" layoutY="65.0" prefHeight="25.0" prefWidth="472.0" promptText="Username" />
                         <Label layoutX="176.0" layoutY="14.0" prefHeight="28.0" prefWidth="163.0" text="Login Information" textFill="WHITE">
                            <font>
                               <Font size="19.0" />
                            </font></Label>
-                        <PasswordField layoutX="14.0" layoutY="104.0" prefHeight="25.0" prefWidth="472.0" promptText="Password" styleClass="password" />
+                        <PasswordField fx:id="userPassword" layoutX="14.0" layoutY="104.0" prefHeight="25.0" prefWidth="472.0" promptText="Password" styleClass="password" />
                         <Button fx:id="loginBtn" layoutX="25.0" layoutY="165.0" mnemonicParsing="false" onAction="#Login" prefHeight="28.0" prefWidth="163.0" style="-fx-background-color: transparent; -fx-border-radius: 120px; -fx-border-color: white;" text="Login" textFill="#0099ff" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="24.0" />
-                        <Button fx:id="exitBtn" layoutX="314.0" layoutY="144.0" mnemonicParsing="false" onAction="#exitAPP" prefHeight="28.0" prefWidth="163.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 120px;" text="Exit" textFill="#0099ff" />
+                        <Button fx:id="exitBtn" layoutX="314.0" layoutY="144.0" mnemonicParsing="false" onAction="#exitAPP" prefHeight="28.0" prefWidth="163.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 120px;" text="Exit Application" textFill="#0099ff" />
+                        <Button fx:id="registerFormBtn" disable="true" layoutX="182.0" layoutY="176.0" mnemonicParsing="false" onAction="#registerForm" prefHeight="28.0" prefWidth="135.0" style="-fx-background-color: transparent; -fx-border-radius: 120px; -fx-border-color: white;" text="Register" textFill="#0099ff" />
                      </children>
                   </AnchorPane>
                </children>
             </AnchorPane>
-            <Label fx:id="errorReport" prefHeight="32.0" prefWidth="455.0" textFill="WHITE">
-               <font>
-                  <Font size="14.0" />
-               </font></Label>
          </children>
       </VBox>
+      <Label fx:id="errorReport" alignment="CENTER" layoutX="243.0" layoutY="554.0" prefHeight="32.0" prefWidth="500.0" textFill="#0091ff">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="26.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

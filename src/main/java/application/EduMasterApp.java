@@ -26,7 +26,7 @@ public class EduMasterApp extends Application {
     @Override
     public void start(Stage stage){
         try {
-            EduMasterApp.stage= stage;
+            EduMasterApp.stage = stage;
             Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("FXML/EduMasterApp.fxml"));
             scene = new Scene(root);
             stage.initStyle(StageStyle.UNDECORATED);

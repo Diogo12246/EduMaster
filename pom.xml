@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>scp_foundation</groupId>
-    <artifactId>SCP_Foundation</artifactId>
-    <version>scp_core_1_0</version>
+    <groupId>Edu_Master</groupId>
+    <artifactId>Edu_Master</artifactId>
+    <version>Edu_Master_1_0</version>
     <build>
         <plugins>
             <plugin>

@@ -1,6 +1,7 @@
 package application;
 
 
+import ConnectionManager.ConnectionMasterBuilder;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
@@ -44,7 +45,6 @@ public class EduLogin extends Application {
 
             });
             stage.show();
-
         }
         catch (Exception ex){
             EduExceptionHandler.ThrowEX(ex);

@@ -3,7 +3,7 @@
 }
 
 .box-login {
-    -fx-background-color: rgba(63, 127, 191, 0.3);
+    -fx-background-color: rgba(63, 127, 191, 0.7);
     -fx-border-color: transparent;
     -fx-animation-glow: 10s ease infinite forwards;
 }
