@@ -5,14 +5,11 @@ import java.io.StringWriter;
 
 public class EduExceptionHandler {
 
-
-    public static void ThrowEX(Exception ex){
-        System.out.println("Ocorreu um erro na aplicação. Chame um administrador." + "\n" + " -- Detalhes do erro --" + "\n");
+    public static void ThrowEX(Exception ex) {
+        System.out.println("An error has occurred. Please call an administrator" + "\n" + " -- Error details --" + "\n");
         StringWriter sw = new StringWriter();
         ex.printStackTrace(new PrintWriter(sw));
         String exceptionAsString = sw.toString();
         System.out.println(exceptionAsString);
     }
-
-
 }

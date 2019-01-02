@@ -35,23 +35,23 @@ public class UserDAO {
         PreparedStatement stmt = null;
         ResultSet rs = null;
         boolean valid = false;
+
         try {
-            stmt = con.prepareStatement("SELECT * FROM user WHERE UserName = ? and UserPassword = ?");
+            stmt = con.prepareStatement("SELECT * FROM user WHERE UserName = ?");
             stmt.setString(1, userName);
-            stmt.setString(2, userPassword);
             rs = stmt.executeQuery();
 
             if (rs.next()) {
-                valid = true;
-
+                String password = rs.getString("UserPassword");
+                if (password.equals(userPassword)){
+                    valid =true;
+                }
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             ConnectionMasterBuilder.closeConnection(con, stmt, rs);
         }
         return valid;
-
     }
 }

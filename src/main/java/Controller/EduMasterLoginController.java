@@ -3,6 +3,7 @@ package Controller;
 import Model.User;
 import Model_DAO.UserDAO;
 import application.EduMasterApp;
+import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -64,14 +65,15 @@ public class EduMasterLoginController implements Initializable {
     @FXML
     void Login() {
         UserDAO userdao = new UserDAO();
-        if (userdao.validateUser(userName.getText(), userPassword.getText())) {
+
+        if (userdao.validateUser(userName.getText(), userPassword.getText()))
+        {
             Stage stage = (Stage)loginBtn.getScene().getWindow();
             stage.close();
             UserInstance = userName.getText();
-            //new EduMasterApp(userInstance).start(new Stage());
             new EduMasterApp().start(new Stage());
         }
-        else errorReport.setText("Invalid Login.");
+        else errorReport.setText("User not found.");
     }
 
     @FXML
