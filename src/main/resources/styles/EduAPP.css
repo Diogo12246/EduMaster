@@ -1,0 +1,25 @@
+.topBar{
+   -fx-background-color: #4682B4;
+}
+
+.box-login {
+    -fx-background-color: rgba(63, 127, 191, 0.3);
+    -fx-border-color: transparent;
+    -fx-animation-glow: 10s ease infinite forwards;
+}
+.button
+{
+-fx-background-color : transparent;
+-fx-text-fill : #e7e5e5;
+}
+.button:hover{
+-fx-background-color : #63ace5;
+}
+.button:pressed
+{
+-fx-background-color : #adcbe3;
+}
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}

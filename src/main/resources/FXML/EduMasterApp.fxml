@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EduMasterAppController">
+   <children>
+      <BorderPane layoutY="43.0" prefHeight="640.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <GridPane prefHeight="48.0" prefWidth="1024.0" style="-fx-background-color: #4b86b4;" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="635.0" minWidth="10.0" prefWidth="143.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1173.0" minWidth="10.0" prefWidth="759.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1173.0" minWidth="10.0" prefWidth="92.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox prefHeight="28.0" prefWidth="878.0" GridPane.columnIndex="1" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="53.0" GridPane.columnIndex="2">
+                     <children>
+                        <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exitAPP" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: transparent; -fx-border-radius: 120px; -fx-border-color: white;" text="Exit" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../styles/images/exit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="EduMaster version 1.0" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Copyright - D12246" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </top>
+         <left>
+            <GridPane prefHeight="608.0" prefWidth="153.0" style="-fx-background-color: #4b86b4;" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="298.0" minHeight="10.0" prefHeight="183.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="498.0" minHeight="10.0" prefHeight="407.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="147.0" prefWidth="150.0" spacing="10.0" style="-fx-border-color: white;">
+                     <children>
+                        <ImageView fitHeight="98.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../styles/images/userInstance.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="99.0" style="-fx-border-color: white; -fx-border-radius: 100px;" text="Diogo Sousa" textAlignment="CENTER" textFill="WHITE" />
+                        <Button mnemonicParsing="false" prefHeight="19.0" prefWidth="85.0" style="-fx-background-color: transparent; -fx-border-radius: 20px; -fx-border-color: white;" text="Logout" textFill="WHITE">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../styles/images/user.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.rowIndex="1">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Students" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="199.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Lecturers" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="217.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Institutions" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="235.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Courses" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="253.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Disciplines" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="11.0" layoutY="271.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Tuitions" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children></VBox>
+               </children>
+            </GridPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="871.0" style="-fx-background-color: #e7eff6;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
