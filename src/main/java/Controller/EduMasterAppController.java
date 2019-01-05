@@ -1,11 +1,13 @@
 package Controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import utility.EduSceneManager;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -35,15 +37,16 @@ public class EduMasterAppController implements Initializable {
         stage.close();
     }
 
+    @FXML
+    void CourseManagement(ActionEvent event) {
+        EduSceneManager.getEduCourseManagement(content);
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         labelUser.setText(EduMasterLoginController.getUserInstance());
     }
 }
 
-    /*
-   @FXML
-    void planetCatalog(ActionEvent event) {
-        //EduSceneManager.getPlanetCatalogController(content);
-    }*/
+
 
