@@ -3,7 +3,6 @@ package Controller;
 import Model.User;
 import Model_DAO.UserDAO;
 import application.EduMasterApp;
-import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -17,7 +16,7 @@ import utility.EduExceptionHandler;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class EduMasterLoginController implements Initializable {
+public class EduMasterLoginController {
 
     EduMasterManager manager = new EduMasterManager();
     @FXML
@@ -109,8 +108,4 @@ public class EduMasterLoginController implements Initializable {
     }
 
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-
-    }
 }
