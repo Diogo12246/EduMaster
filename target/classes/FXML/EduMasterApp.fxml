@@ -91,7 +91,7 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.rowIndex="1">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Students" textFill="WHITE">
+                        <Button mnemonicParsing="false" onAction="#StudentManagement" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Students" textFill="WHITE">
                            <graphic>
                               <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>

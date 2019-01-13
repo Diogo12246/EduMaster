@@ -42,6 +42,11 @@ public class EduMasterAppController implements Initializable {
         EduSceneManager.getEduCourseManagement(content);
     }
 
+    @FXML
+    void StudentManagement(ActionEvent event) {
+        EduSceneManager.getEduStudentManagement(content);
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         labelUser.setText(EduMasterLoginController.getUserInstance());

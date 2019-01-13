@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="871.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TreeTableView layoutX="14.0" layoutY="298.0" prefHeight="280.0" prefWidth="845.0">
+        <columns>
+          <TreeTableColumn prefWidth="150.0" text="Student Name" />
+          <TreeTableColumn prefWidth="150.0" text="Student Email" />
+            <TreeTableColumn prefWidth="150.0" text="Student Tuition" />
+        </columns>
+      </TreeTableView>
+   </children>
+</fx:root>
