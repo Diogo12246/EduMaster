@@ -36,6 +36,8 @@ public class EduCourseController extends AnchorPane implements Initializable {
     private Button insertCourse;
     @FXML
     private Button updateCourse;
+    @FXML
+    private Button deleteCourse;
 
     private ObservableList<Course> courseList = FXCollections.observableArrayList();
     private static int courseID;
@@ -70,6 +72,14 @@ public class EduCourseController extends AnchorPane implements Initializable {
         course.setCourseName(courseName.getText());
         course.setCourseDescription(courseDescription.getText());
         dao.createCourse(course);
+        updateData();
+    }
+
+    @FXML void deleteCourse(){
+        CourseDAO dao = new CourseDAO();
+        Course course = new Course();
+        course.setId(courseID);
+        dao.deleteCourse(course);
         updateData();
     }
 

@@ -66,4 +66,20 @@ public class CourseDAO {
 
     }
 
+    public void deleteCourse(Course course){
+        Connection con = ConnectionMasterBuilder.getConnection();
+        PreparedStatement stmt = null;
+        try {
+            System.out.println(course.getCourseName() + " " + course.getId());
+            stmt = con.prepareStatement("DELETE FROM course where id = ?");
+            stmt.setInt(1, course.getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            ConnectionMasterBuilder.closeConnection(con, stmt);
+        }
+
+    }
+
 }
