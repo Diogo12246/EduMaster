@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import utility.EduSceneManager;
 
@@ -22,6 +23,7 @@ public class EduMasterAppController implements Initializable {
     @FXML private AnchorPane content;
     @FXML private Button exitBtn;
     @FXML private Label labelUser;
+    @FXML private GridPane gridpaneAPP;
 
     public AnchorPane getContent() {
         return content;
@@ -50,6 +52,7 @@ public class EduMasterAppController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         labelUser.setText(EduMasterLoginController.getUserInstance());
+        gridpaneAPP.setStyle("-fx-background-image: url(../resources/styles/images/SplashS2.jpg)");
     }
 }
 

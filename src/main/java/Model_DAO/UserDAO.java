@@ -19,7 +19,6 @@ public class UserDAO {
             stmt = con.prepareStatement("INSERT INTO user (userName,userPassword) VALUES(?,?)");
             stmt.setString(1, user.getUserName());
             stmt.setString(2, user.getUserPassword());
-
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

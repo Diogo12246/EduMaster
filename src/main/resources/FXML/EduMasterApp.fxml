@@ -58,7 +58,7 @@
             </GridPane>
          </top>
          <left>
-            <GridPane prefHeight="608.0" prefWidth="153.0" style="-fx-background-color: #4b86b4;" BorderPane.alignment="CENTER">
+            <GridPane fx:id="gridpaneAPP" prefHeight="608.0" prefWidth="153.0" style="-fx-background-color: #2A52BE;" BorderPane.alignment="CENTER">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
@@ -67,15 +67,15 @@
                 <RowConstraints maxHeight="498.0" minHeight="10.0" prefHeight="407.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <VBox alignment="CENTER" prefHeight="147.0" prefWidth="150.0" spacing="10.0" style="-fx-border-color: white;">
+                  <VBox alignment="CENTER" prefHeight="147.0" prefWidth="150.0" spacing="10.0">
                      <children>
                         <ImageView fitHeight="98.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../styles/images/userInstance.png" />
                            </image>
                         </ImageView>
-                        <Label fx:id="labelUser" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="99.0" style="-fx-border-color: white; -fx-border-radius: 100px;" textAlignment="CENTER" textFill="WHITE" />
-                        <Button mnemonicParsing="false" prefHeight="19.0" prefWidth="85.0" style="-fx-background-color: transparent; -fx-border-radius: 20px; -fx-border-color: white;" text="Logout" textFill="WHITE">
+                        <Label fx:id="labelUser" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="99.0" style="-fx-border-color: #0dc5ee; -fx-border-radius: 100px;" textAlignment="CENTER" textFill="#0dc5ee" />
+                        <Button mnemonicParsing="false" prefHeight="19.0" prefWidth="85.0" style="-fx-background-color: transparent; -fx-border-radius: 20px; -fx-border-color: #0dc5ee;" text="Logout" textFill="#0dc5ee">
                            <font>
                               <Font size="11.0" />
                            </font>
@@ -91,50 +91,32 @@
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.rowIndex="1">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#StudentManagement" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Students" textFill="WHITE">
-                           <graphic>
-                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
+                        <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#StudentManagement" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Students" textFill="WHITE">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Button>
-                        <Button layoutX="11.0" layoutY="199.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Lecturers" textFill="WHITE">
-                           <graphic>
-                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
+                        <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="11.0" layoutY="199.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Lecturers" textFill="WHITE">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Button>
-                        <Button layoutX="11.0" layoutY="217.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Institutions" textFill="WHITE">
-                           <graphic>
-                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
+                        <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="11.0" layoutY="217.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Institutions" textFill="WHITE">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Button>
-                        <Button layoutX="11.0" layoutY="235.0" mnemonicParsing="false" onAction="#CourseManagement" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Courses" textFill="WHITE">
-                           <graphic>
-                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
+                        <Button alignment="CENTER" layoutX="11.0" layoutY="235.0" mnemonicParsing="false" onAction="#CourseManagement" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Courses" textFill="WHITE">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Button>
-                        <Button layoutX="11.0" layoutY="253.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Disciplines" textFill="WHITE">
-                           <graphic>
-                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
+                        <Button alignment="CENTER" layoutX="11.0" layoutY="253.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Disciplines" textFill="WHITE">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Button>
-                        <Button layoutX="11.0" layoutY="271.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Tuitions" textFill="WHITE">
-                           <graphic>
-                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
+                        <Button alignment="CENTER" layoutX="11.0" layoutY="271.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Tuitions" textFill="WHITE">
                            <font>
                               <Font size="15.0" />
                            </font>

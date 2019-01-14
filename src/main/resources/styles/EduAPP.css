@@ -10,16 +10,26 @@
 .button
 {
 -fx-background-color : transparent;
--fx-text-fill : #e7e5e5;
+-fx-text-fill : #0dc5ee;
 }
 .button:hover{
 -fx-background-color : #63ace5;
+-fx-text-fill: white;
 }
 .button:pressed
 {
--fx-background-color : #adcbe3;
+-fx-background-color : #0dc5ee;
+-fx-text-fill: white;
 }
 .increment-button, .decrement-button {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
+}
+
+.sidepanel{
+   -fx-background-color: transparent;
+   -fx-background-position: top;
+   -fx-background-repeat: no-repeat;
+   -fx-background-size: 100% 100%;
+
 }

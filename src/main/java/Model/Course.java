@@ -11,6 +11,9 @@ public class Course {
         this.courseDescription = courseDescription;
     }
 
+    public Course() {
+    }
+
     public int getId() {
         return id;
     }
@@ -34,5 +37,6 @@ public class Course {
     public void setCourseDescription(String courseDescription) {
         this.courseDescription = courseDescription;
     }
+
 }
 
