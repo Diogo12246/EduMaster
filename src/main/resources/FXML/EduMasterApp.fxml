@@ -58,7 +58,7 @@
             </GridPane>
          </top>
          <left>
-            <GridPane fx:id="gridpaneAPP" prefHeight="608.0" prefWidth="153.0" style="-fx-background-color: #2A52BE;" BorderPane.alignment="CENTER">
+            <GridPane fx:id="gridpaneAPP" prefHeight="608.0" prefWidth="153.0" BorderPane.alignment="CENTER">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
@@ -67,7 +67,7 @@
                 <RowConstraints maxHeight="498.0" minHeight="10.0" prefHeight="407.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <VBox alignment="CENTER" prefHeight="147.0" prefWidth="150.0" spacing="10.0">
+                  <VBox alignment="CENTER" prefHeight="147.0" prefWidth="150.0" spacing="10.0" style="-fx-background-color: navy;">
                      <children>
                         <ImageView fitHeight="98.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -89,38 +89,49 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.rowIndex="1">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="153.0" spacing="5.0" style="-fx-background-color: navy;" GridPane.rowIndex="1">
                      <children>
-                        <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#StudentManagement" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Students" textFill="WHITE">
-                           <font>
-                              <Font size="15.0" />
-                           </font>
-                        </Button>
-                        <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="11.0" layoutY="199.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Lecturers" textFill="WHITE">
-                           <font>
-                              <Font size="15.0" />
-                           </font>
-                        </Button>
-                        <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="11.0" layoutY="217.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Institutions" textFill="WHITE">
-                           <font>
-                              <Font size="15.0" />
-                           </font>
-                        </Button>
-                        <Button alignment="CENTER" layoutX="11.0" layoutY="235.0" mnemonicParsing="false" onAction="#CourseManagement" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Courses" textFill="WHITE">
-                           <font>
-                              <Font size="15.0" />
-                           </font>
-                        </Button>
-                        <Button alignment="CENTER" layoutX="11.0" layoutY="253.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Disciplines" textFill="WHITE">
-                           <font>
-                              <Font size="15.0" />
-                           </font>
-                        </Button>
-                        <Button alignment="CENTER" layoutX="11.0" layoutY="271.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" stylesheets="@../styles/EduAPP.css" text="Tuitions" textFill="WHITE">
-                           <font>
-                              <Font size="15.0" />
-                           </font>
-                        </Button>
+                        <VBox alignment="CENTER" prefHeight="208.0" prefWidth="153.0" spacing="5.0" style="-fx-background-color: navy;">
+                           <children>
+                              <Button fx:id="overviewBtn" alignment="CENTER" contentDisplay="RIGHT" layoutX="11.0" layoutY="10.0" mnemonicParsing="false" onAction="#overviewManagement" prefHeight="30.0" prefWidth="151.0" style="-fx-border-color: #4b86b4;" stylesheets="@../styles/EduAPP.css" text="Overview" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="studentsBtn" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#StudentManagement" prefHeight="30.0" prefWidth="151.0" style="-fx-border-color: #4b86b4;" stylesheets="@../styles/EduAPP.css" text="Students" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="lecturersBtn" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" style="-fx-border-color: #4b86b4;" stylesheets="@../styles/EduAPP.css" text="Lecturers" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="institutionsBtn" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" style="-fx-border-color: #4b86b4;" stylesheets="@../styles/EduAPP.css" text="Institutions" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="coursesBtn" alignment="CENTER" mnemonicParsing="false" onAction="#CourseManagement" prefHeight="30.0" prefWidth="151.0" style="-fx-border-color: #4b86b4;" stylesheets="@../styles/EduAPP.css" text="Courses" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="disciplinesBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" style="-fx-border-color: #4b86b4;" stylesheets="@../styles/EduAPP.css" text="Disciplines" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="tuitionsBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="151.0" style="-fx-border-color: #4b86b4;" stylesheets="@../styles/EduAPP.css" text="Tuitions" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="67.0" prefWidth="153.0" />
+                        <VBox layoutX="10.0" layoutY="257.0" prefHeight="52.0" prefWidth="153.0" />
                      </children></VBox>
                </children>
             </GridPane>

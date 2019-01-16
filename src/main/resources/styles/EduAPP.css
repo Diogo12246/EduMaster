@@ -21,6 +21,10 @@
 -fx-background-color : #0dc5ee;
 -fx-text-fill: white;
 }
+.selected{
+-fx-background-color : #0dc5ee;
+-fx-text-fill: white;
+}
 .increment-button, .decrement-button {
     -fx-background-color: transparent;
     -fx-border-color: transparent;

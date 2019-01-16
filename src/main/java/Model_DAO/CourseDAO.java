@@ -4,7 +4,9 @@ import ConnectionManager.ConnectionMasterBuilder;
 import Model.Course;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.image.Image;
 
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -82,4 +84,20 @@ public class CourseDAO {
 
     }
 
+    public Image getCourseImage(Integer id){
+        Connection con = ConnectionMasterBuilder.getConnection();
+        Image img = null;
+        try {
+            ResultSet rs = con.createStatement().executeQuery("select courseImage from course where id =" + id);
+            if (rs.next()){
+                InputStream is = rs.getBinaryStream("courseImage");
+                img = new Image(is);
+                System.out.println("temos imagem");
+            }
+            else System.out.println("DO NOT PANIC BY EXCEPTION");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return img;
+    }
 }
