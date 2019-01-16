@@ -1,6 +1,7 @@
 package Controller;
 
 import Model.Course;
+import Model.Discipline;
 import Model_DAO.CourseDAO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -36,8 +37,10 @@ public class EduCourseController extends AnchorPane implements Initializable {
     @FXML private Button updateCourse;
     @FXML private Button deleteCourse;
     @FXML private ImageView courseImage;
+    @FXML private ListView<Discipline> discipline_courseList;
 
     private ObservableList<Course> courseList = FXCollections.observableArrayList();
+    private ObservableList<Discipline> disciplinesList = FXCollections.observableArrayList();
     private static int courseID;
 
     public EduCourseController() {
@@ -92,7 +95,6 @@ public class EduCourseController extends AnchorPane implements Initializable {
         col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
         col_courseName.setCellValueFactory(new PropertyValueFactory<>("courseName"));
         col_courseDescription.setCellValueFactory(new PropertyValueFactory<>("courseDescription"));
-
         tableViewCourses.setItems(courses);
         tableViewCourses.setOnMouseClicked((MouseEvent event) -> {
             if (event.getClickCount() >= 1) {
@@ -113,11 +115,16 @@ public class EduCourseController extends AnchorPane implements Initializable {
             courseName.setText(selectedCourse.getCourseName());
             courseDescription.setText(selectedCourse.getCourseDescription());
             courseID = selectedCourse.getId();
+            CourseDAO dao = new CourseDAO();
+            disciplinesList = dao.getCourseDiscipline(courseID);
+            discipline_courseList.setItems(disciplinesList);
             //////////HIGHLY EXPERIMENTAL/////////////
+            /*
             CourseDAO dao = new CourseDAO();
             Image courseImg = dao.getCourseImage(courseID);
             courseImage.setImage(courseImg);
             System.out.println("imagem definida");
+            */
             //////////////////////////////////////////
 
         }
