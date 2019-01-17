@@ -24,8 +24,4 @@ public class DisciplineDAO {
         }
         return disciplines;
     }
-
-
-
-
 }

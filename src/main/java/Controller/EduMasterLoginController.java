@@ -18,7 +18,6 @@ import java.util.ResourceBundle;
 
 public class EduMasterLoginController {
 
-    EduMasterManager manager = new EduMasterManager();
     @FXML
     private Button exitBtn;
     @FXML
@@ -65,14 +64,12 @@ public class EduMasterLoginController {
     void Login() {
         UserDAO userdao = new UserDAO();
 
-        if (userdao.validateUser(userName.getText(), userPassword.getText()))
-        {
-            Stage stage = (Stage)loginBtn.getScene().getWindow();
+        if (userdao.validateUser(userName.getText(), userPassword.getText())) {
+            Stage stage = (Stage) loginBtn.getScene().getWindow();
             stage.close();
             UserInstance = userName.getText();
             new EduMasterApp().start(new Stage());
-        }
-        else errorReport.setText("User not found.");
+        } else errorReport.setText("User not found.");
     }
 
     @FXML

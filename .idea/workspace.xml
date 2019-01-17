@@ -7,14 +7,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13b3ae7a-e8d7-434f-b3b1-cbca5c58e850" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/EduMasterOverViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Institution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model_DAO/InstitutionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model_DAO/StudentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/EduMasterOverView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EduCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EduCourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model_DAO/CourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model_DAO/CourseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EduMaster.sql" beforeDir="false" afterPath="$PROJECT_DIR$/EduMaster.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schoolMasterTest.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/schoolMasterTest.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schoolMasterTest.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/schoolMasterTest.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EduCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EduMasterCourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EduMasterAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EduMasterAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EduMasterLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EduMasterLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EduMasterManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EduOverViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EduMasterInstitutionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EduStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EduMasterStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model_DAO/DisciplineDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model_DAO/DisciplineDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/CoursePanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/CoursePanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduCourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/EduCourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model_DAO/CourseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model_DAO/CourseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model_DAO/DisciplineDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model_DAO/DisciplineDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utility/EduSceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utility/EduSceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/CoursePanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/EduMasterCoursePanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/EduMasterApp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/EduMasterApp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/OverView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/EduMasterInstitutionPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/StudentPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/EduMasterStudentPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/EduAPP.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/EduAPP.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduCourseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/EduMasterAppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/EduMasterLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduOverViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduStudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/CoursePanel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/EduMasterApp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/EduMasterApp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/OverView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/StudentPanel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utility/EduSceneManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utility/EduSceneManager.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -162,66 +188,96 @@
     <session id="1199460388">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.34" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="394" />
+          <entry key="dummy" value="24" />
+          <entry key="fxml" value="37" />
+          <entry key="java" value="3543" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="394" />
+          <entry key="JAVA" value="3543" />
+          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="XML" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="fxml" value="5" />
+          <entry key="java" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="30" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduCourseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1836">
-              <caret line="108" column="60" lean-forward="true" selection-start-line="108" selection-start-column="60" selection-end-line="108" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/CourseDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/DisciplineDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="425">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterStudentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4664#4665#0" expanded="true" />
+                <element signature="e#4692#4693#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Model/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/StudentDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-550">
+              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/InstitutionDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="47" selection-start-line="47" selection-end-line="60" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -252,15 +308,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Model/PlanetType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Unit/DserlManagerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utility/ExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/View/appLogin/DserLoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/DserlLogin.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/DserlAPP.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/pCcatalog.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/pViewPListController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/app.css" />
         <option value="$PROJECT_DIR$/src/main/resources/login.css" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/out/artifacts/SCPFoundation/SCPFoundation.jnlp" />
@@ -280,29 +327,38 @@
         <option value="$PROJECT_DIR$/src/main/java/application/DserlAPP.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/SchoolAPP.java" />
         <option value="$PROJECT_DIR$/src/main/java/utility/Node.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/EduMasterManager.java" />
         <option value="$PROJECT_DIR$/src/main/resources/styles/app.css" />
         <option value="$PROJECT_DIR$/src/main/java/application/EduMasterApp.java" />
         <option value="$PROJECT_DIR$/src/main/resources/FXML/EduMasterLogin.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/EduMasterLoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/EduLogin.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/CourseManagementController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/EduCourseManagementController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/EduStudentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/ConnectionManager/ConnectionMasterBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/FXML/EduMasterApp.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/Model_DAO/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/EduOverViewController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/styles/EduAPP.css" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/EduMasterAppController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/Discipline.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/Course.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utility/EduSceneManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model_DAO/CourseDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model_DAO/DisciplineDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/CoursePanel.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/EduCourseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/EduInstitutionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/EduSceneManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Institution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model_DAO/InstitutionDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/EduMasterAppController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/EduMasterCourseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/EduMasterManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/EduMasterOverViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/EduMasterLoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/EduMasterInstitutionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model_DAO/StudentDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/EduMasterStudentController.java" />
       </list>
     </option>
   </component>
@@ -352,8 +408,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="933" />
-    <option name="width" value="994" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -362,8 +418,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -471,10 +525,29 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="FXML" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="EduMaster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EduMaster" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EduMaster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EduMaster" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -485,7 +558,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="scpfoundation" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547692484610" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547760207919" />
     <property name="last_opened_file_path" value="F:/museuid-master" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -494,25 +567,25 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="Controller" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\F0RCEFI3LD\Desktop\EduMaster\src\main\resources\FXML" />
-      <recent name="C:\Users\F0RCEFI3LD\Desktop\EduMaster\target\classes" />
-      <recent name="C:\Users\F0RCEFI3LD\Desktop\EduMaster\target" />
-      <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\styles" />
-      <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\FXML" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\F0RCEFI3LD\Desktop\EduMaster\src\main\resources\FXML" />
       <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\FXML" />
       <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\styles" />
       <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\" />
       <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\EduMaster\src\main\resources\FXML" />
+      <recent name="C:\Users\F0RCEFI3LD\Desktop\EduMaster\src\main\resources\FXML" />
+      <recent name="C:\Users\F0RCEFI3LD\Desktop\EduMaster\target\classes" />
+      <recent name="C:\Users\F0RCEFI3LD\Desktop\EduMaster\target" />
+      <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\styles" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -582,7 +655,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49852508" visible="true" weight="0.18443497" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49852508" visible="true" weight="0.18656716" />
       <window_info id="Structure" order="1" sideWeight="0.5014749" side_tool="true" weight="0.17590618" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -590,14 +663,14 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.25813448" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.2570499" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40238613" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50159913" side_tool="true" weight="0.2570499" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="TMC Test Results" order="11" />
@@ -646,14 +719,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/pCcatalog.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/pViewPListController.java" />
-    <entry file="file://$PROJECT_DIR$/SchoolMaster.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar!/org/gjt/mm/mysql/Driver.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar!/com/mysql/jdbc/Driver.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40-sources.jar!/com/mysql/jdbc/Driver.java" />
     <entry file="file://$PROJECT_DIR$/out/artifacts/SCPFoundation/SCPFoundation.html" />
     <entry file="file://$PROJECT_DIR$/out/artifacts/SCPFoundation/SCPFoundation.jnlp" />
@@ -678,20 +743,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/styles/app.css" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/styles/login.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterLogin.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="36" column="272" selection-start-line="36" selection-start-column="272" selection-end-line="36" selection-end-column="272" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ClassLoader.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/layout/AnchorPane.java" />
@@ -702,21 +760,10 @@
     <entry file="file://$PROJECT_DIR$/target/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/StudentPanel.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/application/EduLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduStudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -737,22 +784,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="106" column="38" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/OverView.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduOverViewController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterOverView.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/styles/EduAPP.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -761,12 +793,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterApp.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="95" column="163" selection-start-line="95" selection-start-column="145" selection-end-line="95" selection-end-column="163" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -779,13 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterAppController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -838,49 +863,180 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Discipline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterStudentPanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utility/EduSceneManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state relative-caret-position="421">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterInstitutionPanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Discipline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Institution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterCoursePanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="78" column="99" lean-forward="true" selection-start-line="78" selection-start-column="99" selection-end-line="78" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterCourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3887#3888#0" expanded="true" />
+            <element signature="e#3915#3916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+          <folding>
+            <element signature="e#992#993#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="107" column="1" lean-forward="true" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterOverViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterAppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+          <folding>
+            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1435#1436#0" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1600#1601#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/CourseDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="34" selection-start-line="34" selection-end-line="49" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterInstitutionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1454">
+          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding>
+            <element signature="e#4704#4705#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/DisciplineDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="425">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduCourseController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/InstitutionDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="108" column="60" lean-forward="true" selection-start-line="108" selection-start-column="60" selection-end-line="108" selection-end-column="60" />
+        <state relative-caret-position="195">
+          <caret line="47" selection-start-line="47" selection-end-line="60" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/StudentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-550">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterStudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4664#4665#0" expanded="true" />
+            <element signature="e#4692#4693#0" expanded="true" />
           </folding>
         </state>
       </provider>

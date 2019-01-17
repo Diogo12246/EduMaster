@@ -1,19 +1,15 @@
 package Controller;
 
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
-public class EduStudentController extends AnchorPane {
+public class EduMasterOverViewController extends AnchorPane {
 
-    @FXML
-    private AnchorPane content;
-
-    public EduStudentController() {
+    public EduMasterOverViewController() {
         try {
-            FXMLLoader fxml = new FXMLLoader(getClass().getResource("/FXML/StudentPanel.fxml"));
+            FXMLLoader fxml = new FXMLLoader(getClass().getResource("/FXML/EduMasterOverView.fxml"));
             fxml.setRoot(this);
             fxml.setController(this);
             fxml.load();
@@ -22,5 +18,6 @@ public class EduStudentController extends AnchorPane {
             ex.printStackTrace();
         }
     }
-}
 
+
+}

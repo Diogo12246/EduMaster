@@ -4,7 +4,7 @@ public class Student {
     private int id;
     private String studentFName;
     private String studentLName;
-    private int studentCode;
+    private String studentEmail;
     private int tuition_id;
 
     public int getId() {
@@ -31,12 +31,12 @@ public class Student {
         this.studentLName = studentLName;
     }
 
-    public int getStudentCode() {
-        return studentCode;
+    public String getStudentEmail() {
+        return studentEmail;
     }
 
-    public void setStudentCode(int studentCode) {
-        this.studentCode = studentCode;
+    public void setStudentEmail(String studentEmail) {
+        this.studentEmail = studentEmail;
     }
 
     public int getTuition_id() {
@@ -45,5 +45,16 @@ public class Student {
 
     public void setTuition_id(int tuition_id) {
         this.tuition_id = tuition_id;
+    }
+
+    public Student(int id, String studentFName, String studentLName, String studentEmail, int tuition_id) {
+        this.id = id;
+        this.studentFName = studentFName;
+        this.studentLName = studentLName;
+        this.studentEmail = studentEmail;
+        this.tuition_id = tuition_id;
+    }
+
+    public Student() {
     }
 }

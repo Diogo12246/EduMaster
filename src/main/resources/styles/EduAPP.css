@@ -10,7 +10,7 @@
 .button
 {
 -fx-background-color : transparent;
--fx-text-fill : #0dc5ee;
+-fx-text-fill : #ecf0f1;
 }
 .button:hover{
 -fx-background-color : #63ace5;

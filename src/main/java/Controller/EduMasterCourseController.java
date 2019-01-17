@@ -14,32 +14,44 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class EduCourseController extends AnchorPane implements Initializable {
+public class EduMasterCourseController extends AnchorPane implements Initializable {
 
-    @FXML private AnchorPane content;
-    @FXML private TableView<Course> tableViewCourses;
-    @FXML private TableColumn<Course, Integer> col_id;
-    @FXML private TableColumn<Course, String> col_courseName;
-    @FXML private TableColumn<Course, String> col_courseDescription;
-    @FXML private TextField courseName;
-    @FXML private TextArea courseDescription;
-    @FXML private Button insertCourse;
-    @FXML private Button updateCourse;
-    @FXML private Button deleteCourse;
-    @FXML private ImageView courseImage;
-    @FXML private ListView<Discipline> discipline_courseList;
+    @FXML
+    private AnchorPane content;
+    @FXML
+    private TableView<Course> tableViewCourses;
+    @FXML
+    private TableColumn<Course, Integer> col_id;
+    @FXML
+    private TableColumn<Course, String> col_courseName;
+    @FXML
+    private TableColumn<Course, String> col_courseDescription;
+    @FXML
+    private TextField courseName;
+    @FXML
+    private TextArea courseDescription;
+    @FXML
+    private Button insertCourseBtn;
+    @FXML
+    private Button updateCourseBtn;
+    @FXML
+    private Button deleteCourseBtn;
+    @FXML
+    private ImageView courseImage;
+    @FXML
+    private ListView<Discipline> discipline_courseList;
 
-    private ObservableList<Course> courseList = FXCollections.observableArrayList();
     private ObservableList<Discipline> disciplinesList = FXCollections.observableArrayList();
     private static int courseID;
 
-    public EduCourseController() {
+    public EduMasterCourseController() {
         try {
-            FXMLLoader fxml = new FXMLLoader(getClass().getResource("/FXML/CoursePanel.fxml"));
+            FXMLLoader fxml = new FXMLLoader(getClass().getResource("/FXML/EduMasterCoursePanel.fxml"));
             fxml.setRoot(this);
             fxml.setController(this);
             fxml.load();
@@ -50,7 +62,7 @@ public class EduCourseController extends AnchorPane implements Initializable {
     }
 
     @FXML
-    public void updateCourse(){
+    private void updateCourse() {
         CourseDAO dao = new CourseDAO();
         Course course = new Course();
         course.setCourseName(courseName.getText());
@@ -61,7 +73,7 @@ public class EduCourseController extends AnchorPane implements Initializable {
     }
 
     @FXML
-    public void createCourse(){
+    private void createCourse() {
         CourseDAO dao = new CourseDAO();
         Course course = new Course();
         course.setCourseName(courseName.getText());
@@ -70,7 +82,8 @@ public class EduCourseController extends AnchorPane implements Initializable {
         updateData();
     }
 
-    @FXML void deleteCourse(){
+    @FXML
+    private void deleteCourse() {
         CourseDAO dao = new CourseDAO();
         Course course = new Course();
         course.setId(courseID);
@@ -79,9 +92,7 @@ public class EduCourseController extends AnchorPane implements Initializable {
     }
 
 
-
-
-    public void updateData(){
+    public void updateData() {
         CourseDAO dao = new CourseDAO();
         ObservableList<Course> courses;
         courses = dao.getCourses();
@@ -98,8 +109,8 @@ public class EduCourseController extends AnchorPane implements Initializable {
 
     }
 
-    public void courseControl(){
-        if (tableViewCourses.getSelectionModel().getSelectedItem() != null){
+    public void courseControl() {
+        if (tableViewCourses.getSelectionModel().getSelectedItem() != null) {
             Course selectedCourse = tableViewCourses.getSelectionModel().getSelectedItem();
             courseName.setText(selectedCourse.getCourseName());
             courseDescription.setText(selectedCourse.getCourseDescription());

@@ -20,17 +20,28 @@ public class EduMasterAppController implements Initializable {
 
     private static EduMasterAppController instance;
 
-    @FXML private AnchorPane content;
-    @FXML private Button exitBtn;
-    @FXML private Label labelUser;
-    @FXML private GridPane gridpaneAPP;
-    @FXML private Button overviewBtn;
-    @FXML private Button studentsBtn;
-    @FXML private Button lecturersBtn;
-    @FXML private Button institutionsBtn;
-    @FXML private Button coursesBtn;
-    @FXML private Button disciplinesBtn;
-    @FXML private Button tuitionsBtn;
+    @FXML
+    private AnchorPane content;
+    @FXML
+    private Button exitBtn;
+    @FXML
+    private Label labelUser;
+    @FXML
+    private GridPane gridpaneAPP;
+    @FXML
+    private Button overviewBtn;
+    @FXML
+    private Button studentsBtn;
+    @FXML
+    private Button lecturersBtn;
+    @FXML
+    private Button institutionsBtn;
+    @FXML
+    private Button coursesBtn;
+    @FXML
+    private Button disciplinesBtn;
+    @FXML
+    private Button tuitionsBtn;
 
     public AnchorPane getContent() {
         return content;
@@ -41,7 +52,7 @@ public class EduMasterAppController implements Initializable {
     }
 
     @FXML
-    private void exitAPP(){
+    private void exitAPP() {
         Stage stage = (Stage) exitBtn.getScene().getWindow();
         stage.close();
     }
@@ -54,6 +65,11 @@ public class EduMasterAppController implements Initializable {
     @FXML
     void StudentManagement() {
         EduSceneManager.getEduStudentManagement(content);
+    }
+
+    @FXML
+    void InstitutionManagement() {
+        EduSceneManager.getEduMasterInstitutionController(content);
     }
 
     @Override
