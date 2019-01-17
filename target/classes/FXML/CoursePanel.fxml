@@ -12,27 +12,37 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="871.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="871.0" type="AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox prefHeight="343.0" prefWidth="871.0">
+      <HBox layoutY="-3.0" prefHeight="343.0" prefWidth="871.0">
          <children>
-            <TableView fx:id="tableViewCourses" prefHeight="343.0" prefWidth="559.0">
-              <columns>
-                <TableColumn fx:id="col_id" editable="false" prefWidth="75.0" text="ID" />
-                <TableColumn fx:id="col_courseName" prefWidth="182.0" text="Course Name" />
-                  <TableColumn fx:id="col_courseDescription" prefWidth="300.0" text="Description" />
-              </columns>
-            </TableView>
-            <ListView prefHeight="343.0" prefWidth="22.0" />
-            <VBox alignment="TOP_CENTER" prefHeight="343.0" prefWidth="285.0">
+            <VBox alignment="CENTER_LEFT" prefHeight="343.0" prefWidth="558.0" spacing="5.0">
                <children>
-                  <HBox prefHeight="12.0" prefWidth="291.0" />
-                  <Label prefHeight="25.0" prefWidth="136.0" text="Discipline List" textFill="#0dc5ee">
+                  <HBox prefHeight="0.0" prefWidth="558.0" />
+                  <Label prefHeight="25.0" prefWidth="136.0" text=" Courses List" textFill="#0dc5ee">
                      <font>
                         <Font name="Times New Roman" size="22.0" />
                      </font>
                   </Label>
-                  <ListView fx:id="discipline_courseList" prefHeight="305.0" prefWidth="283.0" />
+                  <TableView fx:id="tableViewCourses" prefHeight="305.0" prefWidth="558.0">
+                    <columns>
+                      <TableColumn fx:id="col_id" editable="false" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="col_courseName" prefWidth="182.0" text="Course Name" />
+                        <TableColumn fx:id="col_courseDescription" prefWidth="300.0" text="Description" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <ListView prefHeight="343.0" prefWidth="22.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="343.0" prefWidth="285.0">
+               <children>
+                  <HBox prefHeight="12.0" prefWidth="291.0" />
+                  <Label prefHeight="32.0" prefWidth="208.0" text="Course's discipline List" textFill="#0dc5ee">
+                     <font>
+                        <Font name="Times New Roman" size="22.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="discipline_courseList" prefHeight="305.0" prefWidth="285.0" />
                </children>
             </VBox>
          </children>
@@ -61,17 +71,13 @@
             <TextArea fx:id="courseDescription" prefHeight="100.0" prefWidth="381.0" />
          </children>
       </HBox>
-      <HBox layoutX="436.0" layoutY="414.0" prefHeight="87.0" prefWidth="119.0" spacing="20.0">
+      <HBox layoutX="436.0" layoutY="414.0" prefHeight="87.0" prefWidth="119.0" spacing="20.0" />
+      <VBox alignment="TOP_CENTER" layoutX="738.0" layoutY="354.0" prefHeight="147.0" prefWidth="119.0" spacing="30.0">
          <children>
-            <VBox alignment="TOP_CENTER" prefHeight="210.0" prefWidth="150.0" spacing="30.0">
-               <children>
-                  <Button fx:id="updateCourse" mnemonicParsing="false" onAction="#updateCourse" text="Update course" />
-                  <Button fx:id="insertCourse" mnemonicParsing="false" onAction="#createCourse" text="Insert course" />
-                  <Button fx:id="deleteCourse" layoutX="23.0" layoutY="10.0" mnemonicParsing="false" onAction="#deleteCourse" text="Delete Course" />
-               </children>
-            </VBox>
+            <Button fx:id="updateCourse" mnemonicParsing="false" onAction="#updateCourse" text="Update course" />
+            <Button fx:id="insertCourse" mnemonicParsing="false" onAction="#createCourse" text="Insert course" />
+            <Button fx:id="deleteCourse" layoutX="23.0" layoutY="10.0" mnemonicParsing="false" onAction="#deleteCourse" text="Delete Course" />
          </children>
-      </HBox>
-      <VBox prefHeight="200.0" prefWidth="100.0" />
+      </VBox>
    </children>
 </fx:root>

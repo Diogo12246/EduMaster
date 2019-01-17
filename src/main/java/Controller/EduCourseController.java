@@ -3,6 +3,7 @@ package Controller;
 import Model.Course;
 import Model.Discipline;
 import Model_DAO.CourseDAO;
+import Model_DAO.DisciplineDAO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -103,7 +104,7 @@ public class EduCourseController extends AnchorPane implements Initializable {
             courseName.setText(selectedCourse.getCourseName());
             courseDescription.setText(selectedCourse.getCourseDescription());
             courseID = selectedCourse.getId();
-            CourseDAO dao = new CourseDAO();
+            DisciplineDAO dao = new DisciplineDAO();
             disciplinesList = dao.getCourseDiscipline(courseID);
             discipline_courseList.setItems(disciplinesList);
         }
