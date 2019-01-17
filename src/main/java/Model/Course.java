@@ -12,6 +12,7 @@ public class Course {
     }
 
     public Course() {
+
     }
 
     public int getId() {

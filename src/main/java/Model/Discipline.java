@@ -4,10 +4,6 @@ public class Discipline {
     private int id;
     private String disciplineName;
 
-    public Discipline(String disciplineName) {
-
-    }
-
     public int getId() {
         return id;
     }
@@ -29,4 +25,8 @@ public class Discipline {
         this.disciplineName = disciplineName;
     }
 
+    @Override
+    public String toString() {
+        return disciplineName;
+    }
 }

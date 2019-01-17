@@ -5,7 +5,6 @@ import Controller.EduCourseController;
 import Controller.EduOverViewController;
 import Controller.EduStudentController;
 import javafx.scene.layout.AnchorPane;
-import sun.plugin.javascript.navig.Anchor;
 
 
 public class EduSceneManager {
