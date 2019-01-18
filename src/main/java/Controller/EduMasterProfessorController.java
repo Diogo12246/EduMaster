@@ -1,15 +1,15 @@
 package Controller;
 
+import Model.Course;
 import Model.Professor;
+import Model_DAO.CourseDAO;
 import Model_DAO.ProfessorDAO;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -38,8 +38,15 @@ public class EduMasterProfessorController extends AnchorPane implements Initiali
     private Button updateProfessorBtn;
     @FXML
     private Button deleteProfessorBtn;
+    @FXML
+    private ComboBox<Course> professorCourseComboBox;
+    @FXML
+    private Button assignProfessorCourseBtn;
+    @FXML
+    private Button removeProfesorCourseBtn;
 
     private static int professorID;
+    private ObservableList<Course> coursesList = FXCollections.observableArrayList();
 
     public EduMasterProfessorController() {
         try {
@@ -98,6 +105,9 @@ public class EduMasterProfessorController extends AnchorPane implements Initiali
                 professorControl();
             }
         });
+        CourseDAO daoCourse = new CourseDAO();
+        coursesList =  daoCourse.getCourses();
+        professorCourseComboBox.setItems(coursesList);
     }
 
     public void professorControl() {
