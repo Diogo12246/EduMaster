@@ -31,7 +31,6 @@ public class InstitutionDAO {
         Connection con = ConnectionMasterBuilder.getConnection();
         PreparedStatement stmt = null;
         try {
-            System.out.println(institution.getInstitutionName() + " " + institution.getId());
             stmt = con.prepareStatement("INSERT INTO institution (institution.institutionName,institution.institutionStamp,institution.institutionCity,institution.institutionSales) VALUES(?,?,?,?)");
             stmt.setString(1, institution.getInstitutionName());
             stmt.setString(2, institution.getInstitutionStamp());
@@ -49,7 +48,6 @@ public class InstitutionDAO {
         Connection con = ConnectionMasterBuilder.getConnection();
         PreparedStatement stmt = null;
         try {
-            System.out.println(institution.getInstitutionName() + " " + institution.getId());
             stmt = con.prepareStatement("DELETE FROM institution where id = ?");
             stmt.setInt(1, institution.getId());
             stmt.executeUpdate();

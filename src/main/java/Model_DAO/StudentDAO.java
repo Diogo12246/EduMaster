@@ -32,7 +32,6 @@ public class StudentDAO {
         Connection con = ConnectionMasterBuilder.getConnection();
         PreparedStatement stmt = null;
         try {
-            System.out.println(student.getStudentFName());
             stmt = con.prepareStatement("INSERT INTO student (studentFName,studentLName,studentEmail) values (?,?,?)");
             stmt.setString(1, student.getStudentFName());
             stmt.setString(2,student.getStudentLName());
@@ -66,7 +65,6 @@ public class StudentDAO {
         Connection con = ConnectionMasterBuilder.getConnection();
         PreparedStatement stmt = null;
         try {
-            System.out.println(student.getStudentFName() + " " + student.getStudentEmail());
             stmt = con.prepareStatement("DELETE FROM student WHERE id = ?");
             stmt.setInt(1, student.getId());
             stmt.executeUpdate();

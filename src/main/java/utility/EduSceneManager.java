@@ -1,10 +1,6 @@
 package utility;
 
-//import Controller.PlanetCatalogController;
-import Controller.EduMasterCourseController;
-import Controller.EduMasterInstitutionController;
-import Controller.EduMasterOverViewController;
-import Controller.EduMasterStudentController;
+import Controller.*;
 import javafx.scene.layout.AnchorPane;
 
 
@@ -14,6 +10,8 @@ public class EduSceneManager {
     private static EduMasterStudentController studentController;
     private static EduMasterOverViewController overviewController;
     private static EduMasterInstitutionController institutionController;
+    private static EduMasterDisciplineController disciplineController;
+    private static EduMasterProfessorController professorController;
 
     public static void getEduCourseManagement(AnchorPane box) {
         courseController = courseController == null ? new EduMasterCourseController() : courseController;
@@ -35,8 +33,19 @@ public class EduSceneManager {
         config(box, institutionController);
     }
 
+    public static void getEduDisciplineController(AnchorPane box) {
+        disciplineController = disciplineController == null ? new EduMasterDisciplineController() : disciplineController;
+        config(box,disciplineController);
+    }
+
+    public static void getEduProfessorController(AnchorPane box){
+        professorController = professorController == null ? new EduMasterProfessorController() : professorController;
+        config(box,professorController);
+    }
+
     public static void config(AnchorPane box, AnchorPane content) {
         box.getChildren().clear();
         box.getChildren().add(content);
     }
+
 }

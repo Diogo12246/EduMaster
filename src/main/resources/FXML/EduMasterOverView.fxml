@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="871.0" type="AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="871.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="33.0" layoutY="34.0" prefHeight="60.0" prefWidth="167.0" text="OverView:" textFill="#ecf0f1">
          <font>
@@ -12,6 +12,11 @@
          </font>
       </Label>
       <Label layoutX="33.0" layoutY="159.0" prefHeight="60.0" prefWidth="144.0" text="Students:" textFill="#ecf0f1">
+         <font>
+            <Font name="Dubai Regular" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="364.0" layoutY="266.0" prefHeight="60.0" prefWidth="144.0" text="TODO!" textFill="#ecf0f1">
          <font>
             <Font name="Dubai Regular" size="34.0" />
          </font>

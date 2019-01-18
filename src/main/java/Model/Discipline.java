@@ -25,6 +25,9 @@ public class Discipline {
         this.disciplineName = disciplineName;
     }
 
+    public Discipline() {
+    }
+
     @Override
     public String toString() {
         return disciplineName;

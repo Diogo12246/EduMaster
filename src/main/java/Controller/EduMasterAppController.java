@@ -1,9 +1,7 @@
 package Controller;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
@@ -70,6 +68,16 @@ public class EduMasterAppController implements Initializable {
     @FXML
     void InstitutionManagement() {
         EduSceneManager.getEduMasterInstitutionController(content);
+    }
+
+    @FXML
+    void DisciplineManagement(){
+        EduSceneManager.getEduDisciplineController(content);
+    }
+
+    @FXML
+    void ProfessorManagement(){
+        EduSceneManager.getEduProfessorController(content);
     }
 
     @Override

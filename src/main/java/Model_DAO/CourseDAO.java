@@ -53,7 +53,6 @@ public class CourseDAO {
         Connection con = ConnectionMasterBuilder.getConnection();
         PreparedStatement stmt = null;
         try {
-            System.out.println(course.getCourseName() + " " + course.getId());
             stmt = con.prepareStatement("INSERT INTO course (courseName,courseDescription) VALUES(?,?)");
             stmt.setString(1, course.getCourseName());
             stmt.setString(2, course.getCourseDescription());
@@ -70,7 +69,6 @@ public class CourseDAO {
         Connection con = ConnectionMasterBuilder.getConnection();
         PreparedStatement stmt = null;
         try {
-            System.out.println(course.getCourseName() + " " + course.getId());
             stmt = con.prepareStatement("DELETE FROM course where id = ?");
             stmt.setInt(1, course.getId());
             stmt.executeUpdate();

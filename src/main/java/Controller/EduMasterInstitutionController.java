@@ -112,13 +112,6 @@ public class EduMasterInstitutionController extends AnchorPane implements Initia
             institutionStamp.setText(selectedInstitution.getInstitutionStamp());
             institutionCity.setText(selectedInstitution.getInstitutionCity());
             institutionID = selectedInstitution.getId();
-            /////////////////////// TODO COURSES /////////////////
-            /*
-            DisciplineDAO dao = new DisciplineDAO();
-            disciplinesList = dao.getCourseDiscipline(courseID);
-            discipline_courseList.setItems(disciplinesList);
-            */
-            /////////////////////////////////////////////////////
         }
     }
 
