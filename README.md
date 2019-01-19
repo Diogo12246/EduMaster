@@ -1,8 +1,29 @@
 # EduMaster
-NASA-DSERL served as the learning foundation of JavaFX for this project. 
-ALSO PLEASE TAKE NOTE! this was my very first "big" project in Java. does it have bugs? yes, can i fix them? 
-yes, and I sure will try with time to fix them. 
-But this is a learning project that I used to get the hang of MySQL and JDBC and some patterns like DAO in Java. 
-I enjoyed making this very much! This is in now way a "professional grade" project and it never had that intent. 
 
-Now without further ado let's do further!
+EduMaster is a non professional project that I used to teach myself MySQL and JDBC, and DAO pattern in Java.
+
+## Technology used
+> MySQL
+> JDBC
+> Java
+> JavaFX
+> Maven
+
+## Notes to you dear reader!
+
+Does it have bugs? yes
+Can you fix them? yes
+Will you fix them? yes, with time.
+
+Please understand this was my very first "big" project in Java!
+I used it like i stated before for learning purposes.
+I had a ton of fun doing it, but i recognize some flaws in it and
+there is room for improvement.
+
+I also note some good features on it and how they might be useful
+for someone that wishes to read the code and learn a bit of JavaFX
+
+Thank you for reading!
+Have a wonderful day!
+
+D12246.
