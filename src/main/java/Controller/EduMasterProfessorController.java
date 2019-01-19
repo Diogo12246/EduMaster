@@ -165,17 +165,20 @@ public class EduMasterProfessorController extends AnchorPane implements Initiali
                 professorControl();
             }
         });
+
         institutionsList = daoInstitution.getInstitutions();
         institutionsComboBox.setItems(institutionsList);
+        institutionsComboBox.getSelectionModel().selectFirst();
+
         coursesList =  daoCourse.getCourses();
         CourseComboBox.setItems(coursesList);
         CourseComboBox.getSelectionModel().selectFirst();
+
         professorCoursesList = dao.getProfessorCourseList(professorID);
         professorCourseListView.setItems(professorCoursesList);
+
         professorInstitutionsList = dao.getProfessorInstitutionList(professorID);
         professorInstitutionListView.setItems(professorInstitutionsList);
-        institutionsComboBox.getSelectionModel().selectFirst();
-
     }
 
     public void professorControl() {
@@ -188,14 +191,18 @@ public class EduMasterProfessorController extends AnchorPane implements Initiali
             professorFName.setText(selectedProfessor.getProfessorFName());
             professorLName.setText(selectedProfessor.getProfessorLName());
             professorID = selectedProfessor.getId();
+
             coursesList =  daoCourse.getCourses();
             professorCoursesList = dao.getProfessorCourseList(professorID);
             professorCourseListView.setItems(professorCoursesList);
+
             institutionsList = daoInstitution.getInstitutions();
             institutionsComboBox.setItems(institutionsList);
+            institutionsComboBox.getSelectionModel().selectFirst();
+
             professorInstitutionsList = dao.getProfessorInstitutionList(professorID);
             professorInstitutionListView.setItems(professorInstitutionsList);
-            institutionsComboBox.getSelectionModel().selectFirst();
+
         }
     }
 

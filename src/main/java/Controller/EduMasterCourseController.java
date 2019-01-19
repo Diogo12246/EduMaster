@@ -2,6 +2,7 @@ package Controller;
 
 import Model.Course;
 import Model.Discipline;
+import Model.Professor;
 import Model_DAO.CourseDAO;
 import Model_DAO.DisciplineDAO;
 import javafx.collections.FXCollections;
@@ -45,6 +46,8 @@ public class EduMasterCourseController extends AnchorPane implements Initializab
     private ImageView courseImage;
     @FXML
     private ListView<Discipline> discipline_courseList;
+    @FXML
+    private ComboBox<Professor> ProfessorComboBox;
 
     private ObservableList<Discipline> disciplinesList = FXCollections.observableArrayList();
     private static int courseID;

@@ -5,6 +5,7 @@ public class Professor {
     private String ProfessorFName;
     private String ProfessorLName;
 
+
     public int getId() {
         return id;
     }
@@ -35,6 +36,12 @@ public class Professor {
         ProfessorLName = professorLName;
     }
 
+
     public Professor() {
+    }
+
+    @Override
+    public String toString() {
+        return getProfessorFName() + " " + getProfessorLName();
     }
 }
