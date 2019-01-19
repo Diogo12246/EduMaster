@@ -39,14 +39,19 @@ public class EduMasterProfessorController extends AnchorPane implements Initiali
     @FXML
     private Button deleteProfessorBtn;
     @FXML
-    private ComboBox<Course> professorCourseComboBox;
+    private ComboBox<Course> CourseComboBox;
     @FXML
     private Button assignProfessorCourseBtn;
     @FXML
     private Button removeProfesorCourseBtn;
+    @FXML
+    private Label courseAssignRemoveLabel;
+    @FXML
+    private ListView<Course> professorCourseListView;
 
     private static int professorID;
     private ObservableList<Course> coursesList = FXCollections.observableArrayList();
+    private ObservableList<Course> professorCoursesList = FXCollections.observableArrayList();
 
     public EduMasterProfessorController() {
         try {
@@ -90,12 +95,32 @@ public class EduMasterProfessorController extends AnchorPane implements Initiali
         updateData();
     }
 
+    @FXML
+    private void assignProfessorToCourse(){
+        ProfessorDAO dao = new ProfessorDAO();
+        Professor selectedProfessor = tableViewProfessor.getSelectionModel().getSelectedItem();
+        int professorID = selectedProfessor.getId();
+        int courseID = CourseComboBox.getSelectionModel().getSelectedItem().getId();
+        dao.assignProfessorToCourse(professorID,courseID);
+        updateData();
+    }
+
+    @FXML
+    private void deleteProfessorFromCourse(){
+        ProfessorDAO dao = new ProfessorDAO();
+        Professor selectedProfessor = tableViewProfessor.getSelectionModel().getSelectedItem();
+        int professorID = selectedProfessor.getId();
+        int courseID = CourseComboBox.getSelectionModel().getSelectedItem().getId();
+        dao.deleteProfessorFromCourse(professorID,courseID);
+        updateData();
+    }
+
 
     public void updateData() {
         ProfessorDAO dao = new ProfessorDAO();
+        CourseDAO daoCourse = new CourseDAO();
         ObservableList<Professor> professors;
         professors = dao.getProfessors();
-
         col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
         col_professorFName.setCellValueFactory(new PropertyValueFactory<>("professorFName"));
         col_professorLName.setCellValueFactory(new PropertyValueFactory<>("professorLName"));
@@ -105,17 +130,26 @@ public class EduMasterProfessorController extends AnchorPane implements Initiali
                 professorControl();
             }
         });
-        CourseDAO daoCourse = new CourseDAO();
         coursesList =  daoCourse.getCourses();
-        professorCourseComboBox.setItems(coursesList);
+        CourseComboBox.setItems(coursesList);
+        CourseComboBox.getSelectionModel().selectFirst();
+        professorCoursesList = dao.getProfessorCourseList(professorID);
+        professorCourseListView.setItems(professorCoursesList);
+
     }
 
     public void professorControl() {
-        if (tableViewProfessor.getSelectionModel().getSelectedItem() != null) {
+        if (tableViewProfessor.getSelectionModel().getSelectedItem() != null)
+        {
+            ProfessorDAO dao = new ProfessorDAO();
+            CourseDAO daoCourse = new CourseDAO();
             Professor selectedProfessor = tableViewProfessor.getSelectionModel().getSelectedItem();
             professorFName.setText(selectedProfessor.getProfessorFName());
             professorLName.setText(selectedProfessor.getProfessorLName());
             professorID = selectedProfessor.getId();
+            coursesList =  daoCourse.getCourses();
+            professorCoursesList = dao.getProfessorCourseList(professorID);
+            professorCourseListView.setItems(professorCoursesList);
         }
     }
 

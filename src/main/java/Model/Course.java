@@ -12,7 +12,11 @@ public class Course {
     }
 
     public Course() {
+    }
 
+    public Course(int id, String course) {
+        this.id = id;
+        this.courseName = course;
     }
 
     public int getId() {
@@ -39,5 +43,9 @@ public class Course {
         this.courseDescription = courseDescription;
     }
 
+    @Override
+    public String toString() {
+        return courseName;
+    }
 }
 

@@ -1,6 +1,7 @@
 package Model_DAO;
 
 import ConnectionManager.ConnectionMasterBuilder;
+import Model.Course;
 import Model.Professor;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,6 +13,7 @@ import java.sql.SQLException;
 public class ProfessorDAO {
 
     private ObservableList<Professor> professors = FXCollections.observableArrayList();
+    private ObservableList<Course> professorCourseList = FXCollections.observableArrayList();
 
     public ObservableList<Professor> getProfessors(){
         Connection con = ConnectionMasterBuilder.getConnection();
@@ -72,7 +74,49 @@ public class ProfessorDAO {
         } finally {
             ConnectionMasterBuilder.closeConnection(con, stmt);
         }
+    }
 
+    public void assignProfessorToCourse(Integer professorID,Integer courseId){
+        Connection con = ConnectionMasterBuilder.getConnection();
+        PreparedStatement stmt = null;
+        try {
+            stmt = con.prepareStatement("INSERT INTO professor_course (professor_id,course_id) VALUES (?,?)");
+            stmt.setInt(1, professorID);
+            stmt.setInt(2,courseId);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            ConnectionMasterBuilder.closeConnection(con, stmt);
+        }
+    }
+
+    public void deleteProfessorFromCourse(Integer professorID,Integer courseId){
+        Connection con = ConnectionMasterBuilder.getConnection();
+        PreparedStatement stmt = null;
+        try {
+            stmt = con.prepareStatement("delete from professor_course WHERE professor_id = ? AND course_id = ?");
+            stmt.setInt(1, professorID);
+            stmt.setInt(2,courseId);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            ConnectionMasterBuilder.closeConnection(con, stmt);
+        }
+    }
+
+    public ObservableList<Course> getProfessorCourseList(Integer professorId){
+        Connection con = ConnectionMasterBuilder.getConnection();
+        try {
+            ResultSet rs = con.createStatement().executeQuery("SELECT course.id as ID, course.courseName as Course FROM professor_course INNER JOIN professor ON professor_course.professor_id = professor.id INNER JOIN course ON professor_course.course_id = course.id WHERE professor.id =" + professorId);
+            while (rs.next()){
+                professorCourseList.add(new Course(rs.getInt("id"),rs.getString("Course")));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return professorCourseList;
     }
 
 }

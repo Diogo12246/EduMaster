@@ -56,28 +56,33 @@ public class EduMasterAppController implements Initializable {
     }
 
     @FXML
-    void CourseManagement() {
-        EduSceneManager.getEduCourseManagement(content);
+    private void CourseManagement() {
+        EduSceneManager manager = new EduSceneManager();
+        manager.getEduCourseManagement(content);
     }
 
     @FXML
     void StudentManagement() {
-        EduSceneManager.getEduStudentManagement(content);
+        EduSceneManager manager = new EduSceneManager();
+        manager.getEduStudentManagement(content);
     }
 
     @FXML
     void InstitutionManagement() {
-        EduSceneManager.getEduMasterInstitutionController(content);
+        EduSceneManager manager = new EduSceneManager();
+        manager.getEduMasterInstitutionController(content);
     }
 
     @FXML
     void DisciplineManagement(){
-        EduSceneManager.getEduDisciplineController(content);
+        EduSceneManager manager = new EduSceneManager();
+        manager.getEduDisciplineController(content);
     }
 
     @FXML
     void ProfessorManagement(){
-        EduSceneManager.getEduProfessorController(content);
+        EduSceneManager manager = new EduSceneManager();
+        manager.getEduProfessorController(content);
     }
 
     @Override
@@ -89,7 +94,8 @@ public class EduMasterAppController implements Initializable {
 
     @FXML
     private void overviewManagement() {
-        EduSceneManager.getEduOverViewController(content);
+        EduSceneManager manager = new EduSceneManager();
+        manager.getEduOverViewController(content);
     }
 }
 
