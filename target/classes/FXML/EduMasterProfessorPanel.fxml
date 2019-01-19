@@ -52,6 +52,16 @@
             </HBox>
          </children>
       </VBox>
+      <VBox layoutX="582.0" layoutY="250.0" prefHeight="124.0" prefWidth="275.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="261.0" text="Professor Course List" textFill="#ecf0f1">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <ListView fx:id="professorCourseListView" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
       <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="253.0" prefHeight="124.0" prefWidth="558.0" spacing="10.0" style="-fx-border-color: #ecf0f1;">
          <children>
             <Label prefHeight="26.0" prefWidth="422.0" text="  Assing (or remove) selected Professor to a Course:" textFill="#ecf0f1">
@@ -78,7 +88,7 @@
                         <Button fx:id="removeProfesorCourseBtn" layoutX="172.0" layoutY="17.0" mnemonicParsing="false" onAction="#deleteProfessorFromCourse" prefWidth="100.0" style="-fx-border-color: #ecf0f1;" stylesheets="@../styles/EduAPP.css" text="Remove" />
                      </children>
                   </HBox>
-                  <Label fx:id="courseAssignRemoveLabel" prefHeight="52.0" prefWidth="322.0" text="Testing" textFill="#ecf0f1">
+                  <Label fx:id="courseAssignRemoveLabel" prefHeight="52.0" prefWidth="322.0" textFill="#ecf0f1">
                      <font>
                         <Font name="Times New Roman" size="20.0" />
                      </font>
@@ -87,14 +97,49 @@
             </HBox>
          </children>
       </VBox>
-      <VBox layoutX="582.0" layoutY="250.0" prefHeight="124.0" prefWidth="275.0">
+      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="400.0" prefHeight="124.0" prefWidth="558.0" spacing="10.0" style="-fx-border-color: #ecf0f1;">
          <children>
-            <Label prefHeight="26.0" prefWidth="261.0" text="Professor Course List" textFill="#ecf0f1">
+            <Label prefHeight="23.0" prefWidth="460.0" text="  Assing (or remove) selected Professor to an Institution:" textFill="#ecf0f1">
                <font>
                   <Font name="Times New Roman" size="20.0" />
                </font>
             </Label>
-            <ListView fx:id="professorCourseListView" prefHeight="200.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="29.0" prefWidth="531.0" spacing="30.0">
+               <children>
+                  <ComboBox fx:id="institutionsComboBox" prefHeight="25.0" prefWidth="340.0" />
+                  <Label prefHeight="26.0" prefWidth="165.0" text="Institution List" textFill="#ecf0f1">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="54.0" prefWidth="11.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="221.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="assignProfessorInstitutionBtn" mnemonicParsing="false" onAction="#assignProfessorToInstitution" prefWidth="100.0" style="-fx-border-color: #ecf0f1;" stylesheets="@../styles/EduAPP.css" text="Assign" />
+                        <Button fx:id="removeProfessorInstitutionBtn" layoutX="172.0" layoutY="17.0" mnemonicParsing="false" onAction="#deleteProfessorFromInstitution" prefWidth="100.0" style="-fx-border-color: #ecf0f1;" stylesheets="@../styles/EduAPP.css" text="Remove" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="courseAssignRemoveLabel1" prefHeight="52.0" prefWidth="322.0" textFill="#ecf0f1">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="582.0" layoutY="400.0" prefHeight="124.0" prefWidth="275.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="261.0" text="Professor Institution List" textFill="#ecf0f1">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <ListView fx:id="professorInstitutionListView" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </VBox>
    </children>

@@ -7,6 +7,11 @@ public class Institution {
     private String institutionCity;
     private int institutionSales;
 
+    public Institution(int id, String institution) {
+        this.id = id;
+        this.institutionName = institution;
+    }
+
     public int getId() {
         return id;
     }
@@ -57,5 +62,10 @@ public class Institution {
 
     public Institution() {
 
+    }
+
+    @Override
+    public String toString() {
+        return institutionName;
     }
 }
