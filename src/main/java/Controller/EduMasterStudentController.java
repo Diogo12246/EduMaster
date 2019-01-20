@@ -1,15 +1,15 @@
 package Controller;
 
+import Model.Institution;
 import Model.Student;
+import Model_DAO.InstitutionDAO;
 import Model_DAO.StudentDAO;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -31,6 +31,8 @@ public class EduMasterStudentController extends AnchorPane implements Initializa
     @FXML
     private TableColumn<Student, String> col_studentEmail;
     @FXML
+    private TableColumn<Student, String> col_studentTuitionID;
+    @FXML
     private TextField studentFirstName;
     @FXML
     private TextField studentLastName;
@@ -42,9 +44,20 @@ public class EduMasterStudentController extends AnchorPane implements Initializa
     private Button updateStudentBtn;
     @FXML
     private Button deleteStudentBtn;
+    @FXML
+    private ListView<Institution> studentInstitutionListView;
+    @FXML
+    private ComboBox<Institution> institutionComboBox;
+    @FXML
+    private Button assignStudentToInstitutionsBtn;
+    @FXML
+    private Button removeStudentFromInstitutionsBtn;
 
 
     private static int studentID;
+    private ObservableList<Institution> institutionsList = FXCollections.observableArrayList();
+    private ObservableList<Institution> studentInstitutionList = FXCollections.observableArrayList();
+
 
     public EduMasterStudentController() {
         try {
@@ -91,8 +104,29 @@ public class EduMasterStudentController extends AnchorPane implements Initializa
         updateData();
     }
 
+    @FXML
+    private void assignStudentToInstitution(){
+        StudentDAO dao = new StudentDAO();
+        Student selectedStudent = tableViewStudent.getSelectionModel().getSelectedItem();
+        int studentID = selectedStudent.getId();
+        int institutionID = institutionComboBox.getSelectionModel().getSelectedItem().getId();
+        dao.assignStudentToInstitution(studentID,institutionID);
+        updateData();
+    }
 
-    public void updateData() {
+    @FXML
+    private void deleteStudentFromInstitution(){
+        StudentDAO dao = new StudentDAO();
+        Student selectedStudent = tableViewStudent.getSelectionModel().getSelectedItem();
+        int studentID = selectedStudent.getId();
+        int institutionID = institutionComboBox.getSelectionModel().getSelectedItem().getId();
+        dao.deleteProfessorFromCourse(studentID,institutionID);
+        updateData();
+    }
+
+
+
+    private void updateData() {
         StudentDAO dao = new StudentDAO();
         ObservableList<Student> students;
         students = dao.getStudents();
@@ -101,21 +135,41 @@ public class EduMasterStudentController extends AnchorPane implements Initializa
         col_studentFName.setCellValueFactory(new PropertyValueFactory<>("studentFName"));
         col_studentLName.setCellValueFactory(new PropertyValueFactory<>("studentLName"));
         col_studentEmail.setCellValueFactory(new PropertyValueFactory<>("studentEmail"));
+        col_studentTuitionID.setCellValueFactory(new PropertyValueFactory<>("tuitionCode"));
         tableViewStudent.setItems(students);
         tableViewStudent.setOnMouseClicked((MouseEvent event) -> {
             if (event.getClickCount() == 1) {
                 studentControl();
             }
         });
+
+        InstitutionDAO daoInstitution = new InstitutionDAO();
+        institutionsList = daoInstitution.getInstitutions();
+        institutionComboBox.setItems(institutionsList);
+        institutionComboBox.getSelectionModel().selectFirst();
+
+        studentInstitutionList = dao.getStudentInstitutionList(studentID);
+        studentInstitutionListView.setItems(studentInstitutionList);
+
     }
 
-    public void studentControl() {
+    private void studentControl() {
         if (tableViewStudent.getSelectionModel().getSelectedItem() != null) {
             Student selectedStudent = tableViewStudent.getSelectionModel().getSelectedItem();
             studentFirstName.setText(selectedStudent.getStudentFName());
             studentLastName.setText(selectedStudent.getStudentLName());
             studentEmail.setText(selectedStudent.getStudentEmail());
             studentID = selectedStudent.getId();
+
+            InstitutionDAO daoInstitution = new InstitutionDAO();
+            institutionsList = daoInstitution.getInstitutions();
+            institutionComboBox.setItems(institutionsList);
+            institutionComboBox.getSelectionModel().selectFirst();
+
+            StudentDAO dao = new StudentDAO();
+            studentInstitutionList = dao.getStudentInstitutionList(studentID);
+            studentInstitutionListView.setItems(studentInstitutionList);
+
         }
     }
 

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TableColumn?>
@@ -13,18 +14,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="871.0" type="AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="855.0" type="AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane prefHeight="592.0" prefWidth="856.0">
          <center>
-            <AnchorPane prefHeight="592.0" prefWidth="719.0" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="592.0" prefWidth="719.0" style="-fx-background-color: #2c3e50;" BorderPane.alignment="CENTER">
                <children>
                   <Label layoutX="215.0" layoutY="1.0" prefHeight="20.0" prefWidth="136.0" text=" Courses List" textFill="#ecf0f1">
                      <font>
                         <Font name="Times New Roman" size="22.0" />
                      </font>
                   </Label>
-                  <TableView fx:id="tableViewCourses" layoutX="14.0" layoutY="27.0" prefHeight="522.0" prefWidth="537.0" tableMenuButtonVisible="true">
+                  <TableView fx:id="tableViewCourses" layoutX="14.0" layoutY="27.0" prefHeight="230.0" prefWidth="537.0" tableMenuButtonVisible="true">
                     <columns>
                       <TableColumn fx:id="col_id" editable="false" prefWidth="75.0" text="ID" />
                       <TableColumn fx:id="col_courseName" prefWidth="182.0" text="Course Name" />
@@ -34,7 +35,7 @@
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                      </columnResizePolicy>
                   </TableView>
-                  <VBox layoutX="566.0" layoutY="22.0" prefHeight="252.0" prefWidth="283.0" spacing="15.0">
+                  <VBox layoutX="566.0" layoutY="20.0" prefHeight="254.0" prefWidth="283.0" spacing="15.0">
                      <children>
                         <Label prefHeight="27.0" prefWidth="119.0" text="Course Name:" textFill="#ecf0f1">
                            <font>
@@ -57,15 +58,61 @@
                         </HBox>
                      </children>
                   </VBox>
-                  <VBox alignment="TOP_CENTER" layoutX="565.0" layoutY="296.0" prefHeight="253.0" prefWidth="288.0" spacing="10.0">
+                  <VBox alignment="TOP_CENTER" layoutX="567.0" layoutY="267.0" prefHeight="158.0" prefWidth="281.0" spacing="5.0">
                      <children>
-                        <Label prefHeight="25.0" prefWidth="216.0" text="Course's discipline List" textFill="#ecf0f1">
+                        <Label prefHeight="25.0" prefWidth="216.0" text="Course Institution List" textFill="#ecf0f1">
                            <font>
                               <Font name="Times New Roman" size="22.0" />
                            </font>
                         </Label>
                         <VBox prefHeight="15.0" prefWidth="203.0" />
-                        <ListView fx:id="discipline_courseList" prefHeight="274.0" prefWidth="299.0" />
+                        <ListView fx:id="institutionListView" prefHeight="274.0" prefWidth="299.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="11.0" layoutY="272.0" prefHeight="153.0" prefWidth="543.0" spacing="10.0" style="-fx-border-color: #ecf0f1;">
+                     <children>
+                        <Label prefHeight="23.0" prefWidth="446.0" text="  Assing (or remove) selected Course to an Institution:" textFill="#ecf0f1">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="29.0" prefWidth="531.0" spacing="30.0">
+                           <children>
+                              <ComboBox fx:id="institutionComboBox" prefHeight="25.0" prefWidth="340.0" />
+                              <Label prefHeight="26.0" prefWidth="165.0" text="Institution List" textFill="#ecf0f1">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="54.0" prefWidth="11.0" />
+                              <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="221.0" spacing="10.0">
+                                 <children>
+                                    <Button fx:id="assignCourseToInstitutionBtn" mnemonicParsing="false" onAction="#assignCourseToInstitution" prefWidth="100.0" style="-fx-border-color: #ecf0f1;" stylesheets="@../styles/EduAPP.css" text="Assign" />
+                                    <Button fx:id="removeCourseFromInstitutionBtn" layoutX="172.0" layoutY="17.0" mnemonicParsing="false" onAction="#removeCourseFromInstitution" prefWidth="100.0" style="-fx-border-color: #ecf0f1;" stylesheets="@../styles/EduAPP.css" text="Remove" />
+                                 </children>
+                              </HBox>
+                              <Label fx:id="courseAssignRemoveLabel" prefHeight="52.0" prefWidth="322.0" textFill="#ecf0f1">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="566.0" layoutY="430.0" prefHeight="153.0" prefWidth="284.0" spacing="5.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="216.0" text="Course Discipline List" textFill="#ecf0f1">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="15.0" prefWidth="203.0" />
+                        <ListView fx:id="discipline_courseList" prefHeight="274.0" prefWidth="285.0" />
                      </children>
                   </VBox>
                </children>

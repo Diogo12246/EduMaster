@@ -5,7 +5,8 @@ public class Student {
     private String studentFName;
     private String studentLName;
     private String studentEmail;
-    private int tuition_id;
+    private String  tuitionCode;
+
 
     public int getId() {
         return id;
@@ -39,22 +40,34 @@ public class Student {
         this.studentEmail = studentEmail;
     }
 
-    public int getTuition_id() {
-        return tuition_id;
+    public String getTuitionCode() {
+        return tuitionCode;
     }
 
-    public void setTuition_id(int tuition_id) {
-        this.tuition_id = tuition_id;
+    public void setTuitionCode(String tuitionCode) {
+        this.tuitionCode = tuitionCode;
     }
 
-    public Student(int id, String studentFName, String studentLName, String studentEmail, int tuition_id) {
+    public Student(int id, String studentFName, String studentLName, String studentEmail, String tuitionCode) {
         this.id = id;
         this.studentFName = studentFName;
         this.studentLName = studentLName;
         this.studentEmail = studentEmail;
-        this.tuition_id = tuition_id;
+        this.tuitionCode = tuitionCode;
+    }
+
+    public Student(String id, String firstName, String lastName, String email) {
+        this.tuitionCode = id;
+        this.studentFName = firstName;
+        this.studentLName = lastName;
+        this.studentEmail = email;
     }
 
     public Student() {
+    }
+
+    @Override
+    public String toString() {
+        return studentFName + " " + studentLName + " - " + studentEmail;
     }
 }

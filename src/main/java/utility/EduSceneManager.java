@@ -12,6 +12,7 @@ public class EduSceneManager {
     private EduMasterInstitutionController institutionController;
     private EduMasterDisciplineController disciplineController;
     private EduMasterProfessorController professorController;
+    private EduMasterTuitionController tuitionController;
 
     public void getEduCourseManagement(AnchorPane box) {
         courseController = courseController == null ? new EduMasterCourseController() : courseController;
@@ -43,9 +44,15 @@ public class EduSceneManager {
         config(box,professorController);
     }
 
+    public void getEduTuitionController(AnchorPane box) {
+        tuitionController = tuitionController == null ? new EduMasterTuitionController() : tuitionController;
+        config(box,tuitionController);
+    }
+
     public static void config(AnchorPane box, AnchorPane content) {
         box.getChildren().clear();
         box.getChildren().add(content);
     }
+
 
 }

@@ -85,6 +85,12 @@ public class EduMasterAppController implements Initializable {
         manager.getEduProfessorController(content);
     }
 
+    @FXML
+    void TuitionManagement(){
+        EduSceneManager manager = new EduSceneManager();
+        manager.getEduTuitionController(content);
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         labelUser.setText(EduMasterLoginController.getUserInstance());

@@ -1,12 +1,15 @@
 package Controller;
 
+import Model.Course;
 import Model.Institution;
 import Model_DAO.DisciplineDAO;
 import Model_DAO.InstitutionDAO;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -38,8 +41,11 @@ public class EduMasterInstitutionController extends AnchorPane implements Initia
     private TextField institutionStamp;
     @FXML
     private TextField institutionCity;
+    @FXML
+    private ListView<Course> institutionCoursesListView;
 
     private static int institutionID;
+    private ObservableList<Course> institutionCoursesList = FXCollections.observableArrayList();
 
     public EduMasterInstitutionController() {
         try {
@@ -103,15 +109,22 @@ public class EduMasterInstitutionController extends AnchorPane implements Initia
                 institutionControl();
             }
         });
+
+        institutionCoursesList = dao.getInstitutionsCourses(institutionID);
+        institutionCoursesListView.setItems(institutionCoursesList);
+
     }
 
     public void institutionControl() {
         if (tableViewInstitution.getSelectionModel().getSelectedItem() != null) {
+            InstitutionDAO dao = new InstitutionDAO();
             Institution selectedInstitution = tableViewInstitution.getSelectionModel().getSelectedItem();
             institutionName.setText(selectedInstitution.getInstitutionName());
             institutionStamp.setText(selectedInstitution.getInstitutionStamp());
             institutionCity.setText(selectedInstitution.getInstitutionCity());
             institutionID = selectedInstitution.getId();
+            institutionCoursesList = dao.getInstitutionsCourses(institutionID);
+            institutionCoursesListView.setItems(institutionCoursesList);
         }
     }
 

@@ -2,9 +2,11 @@ package Controller;
 
 import Model.Course;
 import Model.Discipline;
+import Model.Institution;
 import Model.Professor;
 import Model_DAO.CourseDAO;
 import Model_DAO.DisciplineDAO;
+import Model_DAO.InstitutionDAO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -47,9 +49,17 @@ public class EduMasterCourseController extends AnchorPane implements Initializab
     @FXML
     private ListView<Discipline> discipline_courseList;
     @FXML
-    private ComboBox<Professor> ProfessorComboBox;
+    private ComboBox<Institution> institutionComboBox;
+    @FXML
+    private Button assignCourseToInstitutionBtn;
+    @FXML
+    private Button removeCourseFromInstitutionBtn;
+    @FXML
+    private ListView<Institution> institutionListView;
 
     private ObservableList<Discipline> disciplinesList = FXCollections.observableArrayList();
+    private ObservableList<Institution> institutionsList = FXCollections.observableArrayList();
+    private ObservableList<Institution> institutionCoursesList = FXCollections.observableArrayList();
     private static int courseID;
 
     public EduMasterCourseController() {
@@ -94,9 +104,30 @@ public class EduMasterCourseController extends AnchorPane implements Initializab
         updateData();
     }
 
+    @FXML
+    private void assignCourseToInstitution(){
+        Institution selectedInstitution = institutionComboBox.getSelectionModel().getSelectedItem();
+        int institutionID = selectedInstitution.getId();
+        courseID = tableViewCourses.getSelectionModel().getSelectedItem().getId();
+        CourseDAO dao = new CourseDAO();
+        dao.assignCourseToInstitution(institutionID,courseID);
+        updateData();
+    }
+
+    @FXML
+    private void removeCourseFromInstitution(){
+        Institution selectedInstitution = institutionComboBox.getSelectionModel().getSelectedItem();
+        int institutionID = selectedInstitution.getId();
+        courseID = tableViewCourses.getSelectionModel().getSelectedItem().getId();
+        CourseDAO dao = new CourseDAO();
+        dao.deleteCourseFromInstitution(institutionID,courseID);
+        updateData();
+    }
+
 
     public void updateData() {
         CourseDAO dao = new CourseDAO();
+        InstitutionDAO daoInstitute = new InstitutionDAO();
         ObservableList<Course> courses;
         courses = dao.getCourses();
 
@@ -110,17 +141,30 @@ public class EduMasterCourseController extends AnchorPane implements Initializab
             }
         });
 
+        institutionsList = daoInstitute.getInstitutions();
+        institutionComboBox.setItems(institutionsList);
+        institutionComboBox.getSelectionModel().selectFirst();
+
+        institutionCoursesList = dao.getCourseInstitutions(courseID);
+        institutionListView.setItems(institutionCoursesList);
     }
 
     public void courseControl() {
         if (tableViewCourses.getSelectionModel().getSelectedItem() != null) {
+            InstitutionDAO daoInstitute = new InstitutionDAO();
             Course selectedCourse = tableViewCourses.getSelectionModel().getSelectedItem();
             courseName.setText(selectedCourse.getCourseName());
             courseDescription.setText(selectedCourse.getCourseDescription());
             courseID = selectedCourse.getId();
             DisciplineDAO dao = new DisciplineDAO();
+            CourseDAO daoCourse = new CourseDAO();
             disciplinesList = dao.getCourseDiscipline(courseID);
             discipline_courseList.setItems(disciplinesList);
+            institutionsList = daoInstitute.getInstitutions();
+            institutionComboBox.setItems(institutionsList);
+            institutionComboBox.getSelectionModel().selectFirst();
+            institutionCoursesList = daoCourse.getCourseInstitutions(courseID);
+            institutionListView.setItems(institutionCoursesList);
         }
     }
 

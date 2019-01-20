@@ -1,6 +1,7 @@
 package Model_DAO;
 
 import ConnectionManager.ConnectionMasterBuilder;
+import Model.Course;
 import Model.Institution;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -13,6 +14,7 @@ import java.sql.SQLException;
 public class InstitutionDAO {
 
     private ObservableList<Institution> institutions = FXCollections.observableArrayList();
+    private ObservableList<Course> institutionCourses = FXCollections.observableArrayList();
 
     public ObservableList<Institution> getInstitutions() {
         Connection con = ConnectionMasterBuilder.getConnection();
@@ -25,6 +27,19 @@ public class InstitutionDAO {
             e.printStackTrace();
         }
         return institutions;
+    }
+
+    public ObservableList<Course> getInstitutionsCourses(int id) {
+        Connection con = ConnectionMasterBuilder.getConnection();
+        try {
+            ResultSet rs = con.createStatement().executeQuery("SELECT course.id as id, course.courseName as Course FROM institution_course INNER JOIN course ON institution_course.course_id = course.id INNER JOIN institution ON institution_course.institution_id = institution.id WHERE institution.id = " + id);
+            while (rs.next()) {
+                institutionCourses.add(new Course(rs.getInt("id"), rs.getString("Course")));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return institutionCourses;
     }
 
     public void createInstitution(Institution institution) {
