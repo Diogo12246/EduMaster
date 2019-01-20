@@ -5,7 +5,18 @@ public class Student {
     private String studentFName;
     private String studentLName;
     private String studentEmail;
-    private String  tuitionCode;
+    private String tuitionCode;
+
+    public Student(String email, String tCode) {
+        this.studentEmail = email;
+        this.tuitionCode = tCode;
+    }
+
+    public Student(String FirstName,String LastName,String email) {
+        this.studentFName = FirstName;
+        this.studentLName = LastName;
+        this.studentEmail = email;
+    }
 
 
     public int getId() {

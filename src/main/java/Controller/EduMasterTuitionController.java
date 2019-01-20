@@ -73,6 +73,7 @@ public class EduMasterTuitionController extends AnchorPane implements Initializa
         TuitionDAO dao = new TuitionDAO();
         ObservableList<Tuition> tuitions;
         tuitions = dao.getTuitions();
+        String tuitionCode;
 
         col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
         col_code.setCellValueFactory(new PropertyValueFactory<>("tuitionCode"));
@@ -84,9 +85,15 @@ public class EduMasterTuitionController extends AnchorPane implements Initializa
                 tuitionControl();
             }
         });
-        String tuitionCode = tuitionTableView.getSelectionModel().getSelectedItem().getTuitionCode();
-        studentTuitionList = dao.getStudentTuitionList(tuitionCode);
-        studentTuitionListView.setItems(studentTuitionList);
+        if (tuitionTableView.getSelectionModel().getSelectedItem() == null){
+            //System.out.println("null value");
+        }
+        else{
+            tuitionCode = tuitionTableView.getSelectionModel().getSelectedItem().getTuitionCode();
+            studentTuitionList = dao.getStudentTuitionList(tuitionCode);
+            studentTuitionListView.setItems(studentTuitionList);
+        }
+
     }
 
     public void tuitionControl() {

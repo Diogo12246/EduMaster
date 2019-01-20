@@ -232,13 +232,8 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`student` (
   `studentFName` VARCHAR(255) NOT NULL,
   `studentLName` VARCHAR(255) NOT NULL,
   `studentEmail` VARCHAR(255) NOT NULL,
-  `tuition_id` INT(11) NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Aluno_fk0` (`tuition_id` ASC) VISIBLE,
-  CONSTRAINT `Aluno_fk0`
-    FOREIGN KEY (`tuition_id`)
-    REFERENCES `edumaster_test`.`tuition` (`id`)
-	ON DELETE CASCADE)
+  `tuitionCode`  VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 3
 DEFAULT CHARACTER SET = utf8;

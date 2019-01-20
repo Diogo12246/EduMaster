@@ -31,19 +31,18 @@ public class TuitionDAO {
 
 
     public ObservableList<Student> getStudentTuitionList(String code){
-/*
+
         Connection con = ConnectionMasterBuilder.getConnection();
         try {
-            ResultSet rs = con.createStatement().executeQuery("Select student.studentFName as FirstName, student.studentLName as LastName, student.studentEmail as Email, student.tuitionCode as tCode from student where student.tuitionCode = " + code);
+            ResultSet rs = con.createStatement().executeQuery("Select student.studentFName as FirstName, student.studentLName as LastName,student.studentEmail as Email,student.tuitionCode from student where student.tuitionCode =" + "\"" + code + "\"");
+
             while (rs.next()){
-                studentList.add(new Student(rs.getString("FirstName"),rs.getString("LastName"),rs.getString("Email"),rs.getString("tCode")));
+                studentList.add(new Student(rs.getString("FirstName"),rs.getString("LastName"),rs.getString("Email")));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return studentList;
-        */
-        return null;
     }
 
     public void updateTuitionPaid(int tuitionID){
