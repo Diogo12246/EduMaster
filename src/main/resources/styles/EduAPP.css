@@ -7,6 +7,13 @@
     -fx-border-color: transparent;
     -fx-animation-glow: 10s ease infinite forwards;
 }
+
+.box-dashboard {
+    -fx-background-color: rgba(0,0,102,0.1);
+    -fx-border-color: transparent;
+    -fx-animation-glow: 10s ease infinite forwards;
+}
+
 .button
 {
 -fx-background-color : transparent;

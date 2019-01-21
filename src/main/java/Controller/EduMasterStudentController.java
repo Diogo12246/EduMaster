@@ -55,6 +55,7 @@ public class EduMasterStudentController extends AnchorPane implements Initializa
 
 
     private static int studentID;
+    private static String studentTID;
     private ObservableList<Institution> institutionsList = FXCollections.observableArrayList();
     private ObservableList<Institution> studentInstitutionList = FXCollections.observableArrayList();
 
@@ -100,6 +101,7 @@ public class EduMasterStudentController extends AnchorPane implements Initializa
         StudentDAO dao = new StudentDAO();
         Student student = new Student();
         student.setId(studentID);
+        student.setTuitionCode(studentTID);
         dao.deleteStudent(student);
         updateData();
     }
@@ -160,6 +162,7 @@ public class EduMasterStudentController extends AnchorPane implements Initializa
             studentLastName.setText(selectedStudent.getStudentLName());
             studentEmail.setText(selectedStudent.getStudentEmail());
             studentID = selectedStudent.getId();
+            studentTID = selectedStudent.getTuitionCode();
 
             InstitutionDAO daoInstitution = new InstitutionDAO();
             institutionsList = daoInstitution.getInstitutions();

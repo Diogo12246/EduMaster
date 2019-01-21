@@ -90,5 +90,38 @@ public class InstitutionDAO {
         }
     }
 
+    public double getInstitutionProgress() {
+        Connection con = ConnectionMasterBuilder.getConnection();
+        double value = 0.0;
+        try {
+            PreparedStatement statement =  con.prepareStatement("SELECT count(id) from institution");
+            ResultSet rs = statement.executeQuery();
+            rs.next();
+            String sum = rs.getString(1);
+            double valueRaw = Double.parseDouble(sum);
+            //formula//
+            value = valueRaw / 100;
+            //////////
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return value;
+    }
+
+
+    public String getInstitutionCount() {
+        Connection con = ConnectionMasterBuilder.getConnection();
+        String value = "";
+        try {
+            PreparedStatement statement =  con.prepareStatement("SELECT count(id) from institution");
+            ResultSet rs = statement.executeQuery();
+            rs.next();
+            String sum = rs.getString(1);
+            value = sum;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return value;
+    }
 
 }

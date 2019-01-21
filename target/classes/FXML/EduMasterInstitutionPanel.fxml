@@ -29,7 +29,6 @@
                       <TableColumn fx:id="col_institutionName" prefWidth="111.0" text="Name" />
                         <TableColumn fx:id="col_institutionStamp" prefWidth="86.0" text="Stamp" />
                         <TableColumn fx:id="col_institutionCity" prefWidth="73.0" text="City" />
-                        <TableColumn fx:id="col_institutionSales" prefWidth="92.0" text="Sales (€)" />
                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

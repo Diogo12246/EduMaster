@@ -90,4 +90,56 @@ public class TuitionDAO {
             ConnectionMasterBuilder.closeConnection(con, stmt);
         }
     }
+
+    public void removeTuitionToStudent(String tuitionCode){
+        Connection con = ConnectionMasterBuilder.getConnection();
+        PreparedStatement stmt = null;
+        try {
+            stmt = con.prepareStatement("DELETE FROM tuition where tuitionCode = ?");
+            stmt.setString(1, tuitionCode);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            ConnectionMasterBuilder.closeConnection(con, stmt);
+        }
+    }
+
+    public double getTuitionsRevenuePercentage() {
+        Connection con = ConnectionMasterBuilder.getConnection();
+        double value=0.0;
+        try {
+            PreparedStatement statement =  con.prepareStatement("SELECT sum(tuitionValue) FROM tuition");
+            ResultSet rs = statement.executeQuery();
+            rs.next();
+            String sum = rs.getString(1);
+            double valueRaw = Double.parseDouble(sum);
+            //formula//
+            value = valueRaw / 100000;
+            //////////
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return value;
+    }
+
+    public String getTuitionsRevenue() {
+        Connection con = ConnectionMasterBuilder.getConnection();
+        String value = "";
+        try {
+            PreparedStatement statement =  con.prepareStatement("SELECT sum(tuitionValue) FROM tuition");
+            ResultSet rs = statement.executeQuery();
+            rs.next();
+            String sum = rs.getString(1);
+            if (sum.equals("")){
+                value = "0";
+            }
+            else {
+                value = sum;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return value;
+    }
 }

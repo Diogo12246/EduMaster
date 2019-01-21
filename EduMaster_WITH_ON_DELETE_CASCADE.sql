@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`course` (
   `courseImage` BLOB NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 6
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`discipline` (
   `disciplineName` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 13
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`course_discipline` (
     REFERENCES `edumaster_test`.`discipline` (`id`)
 	ON DELETE CASCADE )
 ENGINE = InnoDB
-AUTO_INCREMENT = 20
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`institution` (
   `institutionSales` INT(11) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`institution_course` (
     REFERENCES `edumaster_test`.`course` (`id`)
 	ON DELETE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 7
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -116,31 +116,8 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`tuition` (
   `tuitionPaid` TINYINT(4) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
-
-
--- -----------------------------------------------------
--- Table `edumaster_test`.`institution_tuition`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `edumaster_test`.`institution_tuition` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `institution_id` INT(11) NOT NULL,
-  `tuition_id` INT(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `instituicao_propina_fk0` (`institution_id` ASC) VISIBLE,
-  INDEX `instituicao_propina_fk1` (`tuition_id` ASC) VISIBLE,
-  CONSTRAINT `instituicao_propina_fk0`
-    FOREIGN KEY (`institution_id`)
-    REFERENCES `edumaster_test`.`institution` (`id`)
-	ON DELETE CASCADE,
-  CONSTRAINT `instituicao_propina_fk1`
-    FOREIGN KEY (`tuition_id`)
-    REFERENCES `edumaster_test`.`tuition` (`id`)
-	ON DELETE CASCADE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
 
 -- -----------------------------------------------------
 -- Table `edumaster_test`.`professor`
@@ -151,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`professor` (
   `professorLName` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 4
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -174,7 +151,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`professor_course` (
     REFERENCES `edumaster_test`.`professor` (`id`)
 	ON DELETE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 14
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -197,7 +174,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`professor_discipline` (
     REFERENCES `edumaster_test`.`professor` (`id`)
 	ON DELETE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 17
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -220,7 +197,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`professor_institution` (
     REFERENCES `edumaster_test`.`professor` (`id`)
 	ON DELETE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 4
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -235,7 +212,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`student` (
   `tuitionCode`  VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -258,6 +235,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`student_course` (
     REFERENCES `edumaster_test`.`student` (`id`)
 	ON DELETE CASCADE)
 ENGINE = InnoDB
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -280,7 +258,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`student_institution` (
     REFERENCES `edumaster_test`.`student` (`id`)
 	ON DELETE CASCADE)
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -294,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `edumaster_test`.`user` (
   `UserImage` BLOB NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 

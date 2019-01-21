@@ -124,4 +124,38 @@ public class CourseDAO {
         }
     }
 
+    public double getCoursesProgress() {
+        Connection con = ConnectionMasterBuilder.getConnection();
+        double value = 0.0;
+        try {
+            PreparedStatement statement =  con.prepareStatement("SELECT count(id) from course");
+            ResultSet rs = statement.executeQuery();
+            rs.next();
+            String sum = rs.getString(1);
+            double valueRaw = Double.parseDouble(sum);
+            //formula//
+            value = valueRaw / 1000;
+            //////////
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return value;
+    }
+
+
+    public String getCoursesCount() {
+        Connection con = ConnectionMasterBuilder.getConnection();
+        String value = "";
+        try {
+            PreparedStatement statement =  con.prepareStatement("SELECT count(id) from course");
+            ResultSet rs = statement.executeQuery();
+            rs.next();
+            String sum = rs.getString(1);
+            value = sum;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return value;
+    }
+
 }

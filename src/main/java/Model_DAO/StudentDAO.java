@@ -42,12 +42,12 @@ public class StudentDAO {
             stmt.setString(3,student.getStudentEmail());
             stmt.setString(4, uuidStudent);
             stmt.executeUpdate();
+            TuitionDAO daoTuition = new TuitionDAO();
+            daoTuition.assignTuitionToStudent(uuidStudent);
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             ConnectionMasterBuilder.closeConnection(con, stmt);
-            TuitionDAO daoTuition = new TuitionDAO();
-            daoTuition.assignTuitionToStudent(uuidStudent);
         }
     }
 
@@ -71,10 +71,13 @@ public class StudentDAO {
     public void deleteStudent(Student student) {
         Connection con = ConnectionMasterBuilder.getConnection();
         PreparedStatement stmt = null;
+        String uuidStudent = student.getTuitionCode();
         try {
             stmt = con.prepareStatement("DELETE FROM student WHERE id = ?");
             stmt.setInt(1, student.getId());
             stmt.executeUpdate();
+            TuitionDAO daoTuition = new TuitionDAO();
+            daoTuition.removeTuitionToStudent(uuidStudent);
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -123,6 +126,42 @@ public class StudentDAO {
         } finally {
             ConnectionMasterBuilder.closeConnection(con, stmt);
         }
+    }
+
+
+
+    public double getStudentCountProgress() {
+        Connection con = ConnectionMasterBuilder.getConnection();
+        double value = 0.0;
+        try {
+            PreparedStatement statement =  con.prepareStatement("SELECT count(id) from student");
+            ResultSet rs = statement.executeQuery();
+            rs.next();
+            String sum = rs.getString(1);
+            double valueRaw = Double.parseDouble(sum);
+            //formula//
+            value = valueRaw / 10000;
+            //////////
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return value;
+    }
+
+
+    public String getStudentCount() {
+        Connection con = ConnectionMasterBuilder.getConnection();
+        String value = "";
+        try {
+            PreparedStatement statement =  con.prepareStatement("SELECT count(id) from student");
+            ResultSet rs = statement.executeQuery();
+            rs.next();
+            String sum = rs.getString(1);
+            value = sum;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return value;
     }
 
 }

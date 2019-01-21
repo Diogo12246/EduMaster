@@ -34,8 +34,6 @@ public class EduMasterInstitutionController extends AnchorPane implements Initia
     @FXML
     private TableColumn<Institution, String> col_institutionCity;
     @FXML
-    private TableColumn<Institution, Integer> col_institutionSales;
-    @FXML
     private TextField institutionName;
     @FXML
     private TextField institutionStamp;
@@ -102,7 +100,6 @@ public class EduMasterInstitutionController extends AnchorPane implements Initia
         col_institutionName.setCellValueFactory(new PropertyValueFactory<>("institutionName"));
         col_institutionStamp.setCellValueFactory(new PropertyValueFactory<>("institutionStamp"));
         col_institutionCity.setCellValueFactory(new PropertyValueFactory<>("institutionCity"));
-        col_institutionSales.setCellValueFactory(new PropertyValueFactory<>("institutionSales"));
         tableViewInstitution.setItems(institutions);
         tableViewInstitution.setOnMouseClicked((MouseEvent event) -> {
             if (event.getClickCount() == 1) {
