@@ -15,6 +15,11 @@ import java.sql.SQLException;
 
 public class ProfessorDAO {
 
+    /*
+THIS IS THE DAO FOR SAID OBJECT.
+YOU CAN FIND ALL METHODS OF ACCESS LAYER HERE
+*/
+
     private ObservableList<Professor> professors = FXCollections.observableArrayList();
     private ObservableList<Course> professorCourseList = FXCollections.observableArrayList();
     private ObservableList<Institution> professorInstitutionList = FXCollections.observableArrayList();

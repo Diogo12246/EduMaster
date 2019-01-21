@@ -47,6 +47,9 @@ public class EduMasterOverViewController extends AnchorPane implements Initializ
         }
     }
 
+    /*
+    THIS CONTROLLER IS BUGGY!!!! create records in all fields in order to work.
+     */
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -56,29 +59,62 @@ public class EduMasterOverViewController extends AnchorPane implements Initializ
         InstitutionDAO daoInstitution = new InstitutionDAO();
         ProfessorDAO daoProfessor = new ProfessorDAO();
 
+        try{
+            double progressRevenue = daoTuition.getTuitionsRevenuePercentage();
+            if (progressRevenue <= 0){
+                progressRevenue = 0;
+            }
+            double progressStudents = daoStudent.getStudentCountProgress();
+            if (progressStudents <= 0){
+                progressStudents = 0;
+            }
+            double progressProfessors = daoProfessor.getProfessorProgress();
+            if (progressProfessors <= 0){
+                progressProfessors = 0;
+            }
+            double progressInstitutions = daoInstitution.getInstitutionProgress();
+            if (progressInstitutions <= 0){
+                progressInstitutions = 0;
+            }
+            double progressCourses = daoCourse.getCoursesProgress();
+            if (progressCourses <= 0){
+                progressCourses = 0;
+            }
 
-        double progressRevenue = daoTuition.getTuitionsRevenuePercentage();
-        double progressStudents = daoStudent.getStudentCountProgress();
-        double progressProfessors = daoProfessor.getProfessorProgress();
-        double progressInstitutions = daoInstitution.getInstitutionProgress();
-        double progressCourses = daoCourse.getCoursesProgress();
+            String revenueCountEuro = daoTuition.getTuitionsRevenue();
+            if (revenueCountEuro.equals("")){
+                revenueCountEuro = "0";
+            }
+            String studentCountNumb = daoStudent.getStudentCount();
+            if (studentCountNumb.equals("")){
+                studentCountNumb = "0";
+            }
+            String professorCountNumb = daoProfessor.getProfessorCount();
+            if (professorCountNumb.equals("")){
+                professorCountNumb = "0";
+            }
+            String institutionCountNumb = daoInstitution.getInstitutionCount();
+            if (institutionCountNumb.equals("")){
+                institutionCountNumb = "0";
+            }
+            String coursesCountNumb = daoCourse.getCoursesCount();
+            if (coursesCountNumb.equals("")){
+                coursesCountNumb = "0";
+            }
 
-        String revenueCountEuro = daoTuition.getTuitionsRevenue();
-        String studentCountNumb = daoStudent.getStudentCount();
-        String professorCountNumb = daoProfessor.getProfessorCount();
-        String institutionCountNumb = daoInstitution.getInstitutionCount();
-        String coursesCountNumb = daoCourse.getCoursesCount();
+            revenueValue.setProgress(progressRevenue);
+            totalStudents.setProgress(progressStudents);
+            totalInstitutions.setProgress(progressInstitutions);
+            totalProfessors.setProgress(progressProfessors);
+            totalCourses.setProgress(progressCourses);
 
-        revenueValue.setProgress(progressRevenue);
-        totalStudents.setProgress(progressStudents);
-        totalInstitutions.setProgress(progressInstitutions);
-        totalProfessors.setProgress(progressProfessors);
-        totalCourses.setProgress(progressCourses);
-
-        revenueCount.setText(revenueCountEuro + " €");
-        studentCount.setText(studentCountNumb + " / 10000");
-        professorCount.setText(professorCountNumb + " / 1000");
-        institutionCount.setText(institutionCountNumb + " / 100");
-        courseCount.setText(coursesCountNumb + " / 1000");
+            revenueCount.setText(revenueCountEuro + " €");
+            studentCount.setText(studentCountNumb + " / 10000");
+            professorCount.setText(professorCountNumb + " / 1000");
+            institutionCount.setText(institutionCountNumb + " / 100");
+            courseCount.setText(coursesCountNumb + " / 1000");
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
 }

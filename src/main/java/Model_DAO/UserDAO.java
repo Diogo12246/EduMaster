@@ -10,6 +10,12 @@ import java.sql.SQLException;
 
 public class UserDAO {
 
+
+/*
+THIS IS THE DAO FOR SAID OBJECT.
+YOU CAN FIND ALL METHODS OF ACCESS LAYER HERE
+*/
+
     public void createUser(User user) {
 
         Connection con = ConnectionMasterBuilder.getConnection();

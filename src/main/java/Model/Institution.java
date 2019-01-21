@@ -66,6 +66,12 @@ public class Institution {
 
     @Override
     public String toString() {
-        return institutionName;
+        return institutionName + " " + "(" + + getId() + ")";
     }
 }
+
+/*
+    THIS IS THE OBJECT ON ITS PUREST FORM
+    CONTAINS ALL GETTERS AND SETTERS AND THE CONSTRUCTORS
+    NEEDED FOR THE OBJECT TO BE USED IN THE PROGRAM
+ */

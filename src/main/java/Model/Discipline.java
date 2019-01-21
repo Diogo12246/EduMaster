@@ -30,6 +30,12 @@ public class Discipline {
 
     @Override
     public String toString() {
-        return disciplineName;
+        return disciplineName + "(" + + getId() + ")";
     }
 }
+
+/*
+    THIS IS THE OBJECT ON ITS PUREST FORM
+    CONTAINS ALL GETTERS AND SETTERS AND THE CONSTRUCTORS
+    NEEDED FOR THE OBJECT TO BE USED IN THE PROGRAM
+ */
