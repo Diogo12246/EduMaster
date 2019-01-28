@@ -1,6 +1,8 @@
 package Model;
 
-public class Discipline {
+import java.io.Serializable;
+
+public class Discipline implements Serializable {
     private int id;
     private String disciplineName;
 

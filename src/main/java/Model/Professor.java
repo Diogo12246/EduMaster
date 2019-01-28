@@ -1,6 +1,8 @@
 package Model;
 
-public class Professor {
+import java.io.Serializable;
+
+public class Professor implements Serializable {
     private int id;
     private String ProfessorFName;
     private String ProfessorLName;

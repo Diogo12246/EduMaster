@@ -1,6 +1,8 @@
 package Model;
 
-public class Institution {
+import java.io.Serializable;
+
+public class Institution implements Serializable {
     private int id;
     private String institutionName;
     private String institutionStamp;
