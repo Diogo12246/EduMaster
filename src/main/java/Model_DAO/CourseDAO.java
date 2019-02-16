@@ -27,7 +27,7 @@ public class CourseDAO {
     public ObservableList<Course> getCourses() {
         Connection con = ConnectionMasterBuilder.getConnection();
         try {
-            ResultSet rs = con.createStatement().executeQuery("SELECT * FROM COURSE");
+            ResultSet rs = con.createStatement().executeQuery("SELECT * FROM course");
             while (rs.next()){
                 courses.add(new Course(rs.getInt("id"),
                                 rs.getString("courseName"),

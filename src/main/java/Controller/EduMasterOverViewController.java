@@ -61,23 +61,23 @@ public class EduMasterOverViewController extends AnchorPane implements Initializ
 
         try{
             double progressRevenue = daoTuition.getTuitionsRevenuePercentage();
-            if (progressRevenue <= 0){
+            if (progressRevenue == 0){
                 progressRevenue = 0;
             }
             double progressStudents = daoStudent.getStudentCountProgress();
-            if (progressStudents <= 0){
+            if (progressStudents == 0){
                 progressStudents = 0;
             }
             double progressProfessors = daoProfessor.getProfessorProgress();
-            if (progressProfessors <= 0){
+            if (progressProfessors == 0){
                 progressProfessors = 0;
             }
             double progressInstitutions = daoInstitution.getInstitutionProgress();
-            if (progressInstitutions <= 0){
+            if (progressInstitutions == 0){
                 progressInstitutions = 0;
             }
             double progressCourses = daoCourse.getCoursesProgress();
-            if (progressCourses <= 0){
+            if (progressCourses == 0){
                 progressCourses = 0;
             }
 
@@ -115,6 +115,7 @@ public class EduMasterOverViewController extends AnchorPane implements Initializ
             courseCount.setText(coursesCountNumb + " / 1000");
         }catch (Exception ex){
             ex.printStackTrace();
+            //bad smell here :O
         }
     }
 }
