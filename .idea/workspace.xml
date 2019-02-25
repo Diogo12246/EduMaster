@@ -341,7 +341,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -411,7 +411,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="scpfoundation" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550356839993" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551131870156" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15429688" />
@@ -456,11 +456,11 @@
   </component>
   <component name="RunManager" selected="Application.EduLogin">
     <configuration name="EduLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="application.EduLogin" />
+      <option name="MAIN_CLASS_NAME" value="pt.diogo12246.application.EduLogin" />
       <module name="Edu_Master" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="application.*" />
+          <option name="PATTERN" value="pt.diogo12246.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
