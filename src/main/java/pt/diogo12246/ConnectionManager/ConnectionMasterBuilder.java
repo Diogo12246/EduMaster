@@ -7,12 +7,19 @@ import java.sql.*;
 public class ConnectionMasterBuilder {
 
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://85.246.4.194:3306/edumaster_test";
+    /*
+    private static final String URL = "jdbc:mysql://85.246.4.194:3306/Edu_Master_test";
     // since its hosted on my Raspberry PI3 db access for testing hidden for obvious reasons //
-    private static final String USER = "d12246";
+    private static final String USER = "diogo12246";
     private static final String PASS = "some_strong_password";
-    ///////////////////////////////////////////////////////////////////////////////////////////
-
+    *////////////////////////////////////////////////////////////////////////////////////////////
+    
+    private static final String URL = "jdbc:mysql://localhost:3306/EduMaster_test";
+    // since its hosted on my Raspberry PI3 db access for testing hidden for obvious reasons //
+    private static final String USER = "root";
+    private static final String PASS = "root";
+    
+    
     public static void closeConnection(Connection con) {
         if (con != null) {
             try {

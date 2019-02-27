@@ -1,8 +1,6 @@
 package pt.diogo12246.Model;
 
-import java.io.Serializable;
-
-public class Institution implements Serializable {
+public class Institution {
     private int id;
     private String institutionName;
     private String institutionStamp;

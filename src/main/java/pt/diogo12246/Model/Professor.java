@@ -1,8 +1,6 @@
 package pt.diogo12246.Model;
 
-import java.io.Serializable;
-
-public class Professor implements Serializable {
+public class Professor{
     private int id;
     private String ProfessorFName;
     private String ProfessorLName;

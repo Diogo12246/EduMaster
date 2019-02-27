@@ -1,8 +1,6 @@
 package pt.diogo12246.Model;
 
-import java.io.Serializable;
-
-public class User implements Serializable {
+public class User {
 
     private int id;
     private String userName;

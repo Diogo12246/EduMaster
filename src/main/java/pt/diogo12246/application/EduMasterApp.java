@@ -2,11 +2,8 @@ package pt.diogo12246.application;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import pt.diogo12246.utility.EduExceptionHandler;
@@ -15,9 +12,9 @@ public class EduMasterApp extends Application {
 
     public static Stage stage;
     private Scene scene;
-    private AnchorPane page;
-    private Screen ecra = Screen.getPrimary();
-    private Rectangle2D window = ecra.getVisualBounds();
+    //private AnchorPane page;
+    //private Screen ecra = Screen.getPrimary();
+    //private Rectangle2D window = ecra.getVisualBounds();
 
     public static void main(String[] args) {
         EduLogin.launch(EduMasterApp.class, (java.lang.String[]) null);

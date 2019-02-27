@@ -6,7 +6,89 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b3ae7a-e8d7-434f-b3b1-cbca5c58e850" name="Default Changelist" comment="" />
+    <list default="true" id="13b3ae7a-e8d7-434f-b3b1-cbca5c58e850" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Edu_Master.eml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Edu_Master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Discipline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Discipline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Institution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Institution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Tuition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Tuition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/diogo12246/application/EduLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/diogo12246/application/EduLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pt/diogo12246/application/EduMasterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/diogo12246/application/EduMasterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/EduMasterLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/EduMasterLogin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/images/SplashS.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/images/SplashS.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/images/SplashS2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/images/SplashS2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CREDITS/Credits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ConnectionManager/ConnectionMasterBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterAppController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterCourseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterDisciplineController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterInstitutionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterLoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterOverViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterProfessorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterStudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/EduMasterTuitionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/EduMasterLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/EduMasterLogin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Discipline.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Institution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Professor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Tuition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model_DAO/CourseDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model_DAO/DisciplineDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model_DAO/InstitutionDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model_DAO/ProfessorDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model_DAO/StudentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model_DAO/TuitionDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model_DAO/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/EduLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/EduMasterApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/CREDITS/Credits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/ConnectionManager/ConnectionMasterBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Controller/EduMasterAppController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Controller/EduMasterCourseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Controller/EduMasterDisciplineController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Controller/EduMasterInstitutionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Controller/EduMasterLoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Controller/EduMasterOverViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Controller/EduMasterProfessorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Controller/EduMasterStudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Controller/EduMasterTuitionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model/Discipline.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model/Institution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model/Professor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model/Tuition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model_DAO/CourseDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model_DAO/DisciplineDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model_DAO/InstitutionDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model_DAO/ProfessorDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model_DAO/StudentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model_DAO/TuitionDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/Model_DAO/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/application/EduLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/application/EduMasterApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/utility/EduExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/utility/EduSceneManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pt/diogo12246/utility/EduTuitionUuidGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/styles/images/SplashS.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/styles/images/SplashS.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/styles/images/SplashS2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/styles/images/SplashS2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utility/EduExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utility/EduSceneManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utility/EduTuitionUuidGenerator.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,7 +183,7 @@
     <session id="-1184527527">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="26" />
+          <entry key="project.closed" value="29" />
           <entry key="project.open.time.0" value="11" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="1" />
@@ -112,10 +194,10 @@
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="6" />
+          <entry key="project.open.time.6" value="8" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="33" />
+          <entry key="project.opened" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -124,7 +206,7 @@
           <entry key="css" value="9" />
           <entry key="fxml" value="14" />
           <entry key="html" value="1" />
-          <entry key="java" value="141" />
+          <entry key="java" value="143" />
           <entry key="plantuml" value="1" />
         </counts>
       </usages-collector>
@@ -132,7 +214,7 @@
         <counts>
           <entry key="CSS" value="9" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="141" />
+          <entry key="JAVA" value="143" />
           <entry key="Manifest" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="14" />
@@ -208,11 +290,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/out/artifacts/Edu_Master/Edu_Master.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/ConnectionManager/ConnectionMasterBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+            <state relative-caret-position="119">
+              <caret line="9" column="86" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model_DAO/CourseDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -341,43 +432,27 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="EduMaster" type="b2602c69:ProjectViewProjectNode" />
               <item name="EduMaster" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EduMaster" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EduMaster" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EduMaster" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EduMaster" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EduMaster" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EduMaster" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="Edu_Master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EduMaster" type="b2602c69:ProjectViewProjectNode" />
@@ -397,6 +472,41 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="EduMaster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EduMaster" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="diogo12246" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EduMaster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EduMaster" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="diogo12246" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EduMaster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EduMaster" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="diogo12246" type="462c0819:PsiDirectoryNode" />
+              <item name="ConnectionManager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EduMaster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EduMaster" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="diogo12246" type="462c0819:PsiDirectoryNode" />
+              <item name="Model_DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -411,7 +521,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="scpfoundation" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551131870156" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551282050364" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15429688" />
@@ -420,19 +530,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\F0RCEFI3LD\Desktop\EduMaster\src\main\resources\FXML" />
-      <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\FXML" />
-      <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\styles" />
-      <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\" />
-      <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pt.diogo12246" />
       <recent name="Controller" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Controller" />
-      <recent name="Model_DAO" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\EduMaster\target\classes" />
@@ -440,6 +540,17 @@
       <recent name="F:\EduMaster\src\main\resources\FXML" />
       <recent name="C:\Users\F0RCEFI3LD\Desktop\EduMaster\src\main\resources\FXML" />
       <recent name="C:\Users\F0RCEFI3LD\Desktop\EduMaster\target\classes" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Controller" />
+      <recent name="Model_DAO" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\F0RCEFI3LD\Desktop\EduMaster\src\main\resources\FXML" />
+      <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\FXML" />
+      <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\styles" />
+      <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation\src\main\resources\" />
+      <recent name="C:\Users\F0RCEFI3LD\Desktop\SCPFoundation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -508,9 +619,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49852508" visible="true" weight="0.40458423" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49852508" visible="true" weight="0.413113" />
       <window_info id="Structure" order="1" sideWeight="0.5014749" side_tool="true" weight="0.17590618" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -519,7 +629,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.2548807" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.2548807" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40238613" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -578,7 +688,7 @@
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13-sources.jar!/com/mysql/cj/jdbc/StatementImpl.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/control/ListView.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterTuitionController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Controller/EduMasterTuitionController.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/Scene.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/com/sun/javafx/tk/quantum/GlassViewEventHandler.java" />
@@ -590,109 +700,121 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/com/sun/glass/ui/View.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/com/sun/glass/ui/InvokeLaterDispatcher.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/com/sun/glass/ui/Window.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterStudentController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterInstitutionController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterLoginController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/application/EduMasterApp.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Controller/EduMasterStudentController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Controller/EduMasterInstitutionController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Controller/EduMasterLoginController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/application/EduMasterApp.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterCoursePanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="215" selection-start-line="16" selection-start-column="215" selection-end-line="16" selection-end-column="215" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterDisciplinePanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="254" lean-forward="true" selection-start-line="14" selection-start-column="254" selection-end-line="14" selection-end-column="254" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterProfessorPanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="221" selection-start-line="14" selection-start-column="221" selection-end-line="14" selection-end-column="221" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterStudentPanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="220" lean-forward="true" selection-start-line="14" selection-start-column="220" selection-end-line="14" selection-end-column="220" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterInstitutionPanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="215" lean-forward="true" selection-start-line="14" selection-start-column="215" selection-end-line="14" selection-end-column="215" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterOverView.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="256" selection-start-line="9" selection-start-column="256" selection-end-line="9" selection-end-column="256" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterTuitionPanel.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="77" lean-forward="true" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterLogin.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="204" selection-start-line="12" selection-start-column="204" selection-end-line="12" selection-end-column="204" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/EduMasterApp.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="129" selection-start-line="15" selection-start-column="129" selection-end-line="15" selection-end-column="129" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/TuitionDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/StudentDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/EduSceneManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/EduExceptionHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/UserDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/EduTuitionUuidGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/DisciplineDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/ProfessorDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model_DAO/TuitionDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model_DAO/StudentDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/utility/EduSceneManager.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/utility/EduExceptionHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model_DAO/UserDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/utility/EduTuitionUuidGenerator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model_DAO/DisciplineDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model_DAO/ProfessorDAO.java" />
     <entry file="file://$PROJECT_DIR$/EduMaster.plantuml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Discipline.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Institution.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Professor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Tuition.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/User.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Course.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Discipline.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Institution.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Professor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Tuition.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Course.java" />
     <entry file="file://$PROJECT_DIR$/target/META-INF/MANIFEST.MF" />
     <entry file="file://$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/InstitutionDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model_DAO/CourseDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterOverViewController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Student.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/EduMasterAppController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConnectionManager/ConnectionMasterBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model_DAO/InstitutionDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Controller/EduMasterOverViewController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model/Student.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Controller/EduMasterAppController.java" />
     <entry file="file://$PROJECT_DIR$/out/artifacts/Edu_Master/Edu_Master.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/ConnectionManager/ConnectionMasterBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="86" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pt/diogo12246/Model_DAO/CourseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>

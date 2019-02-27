@@ -44,3 +44,7 @@
    -fx-background-size: 100% 100%;
 
 }
+
+.loginImage {
+	fx-background-image: url("../styles/images/SplashS.jpg");
+}

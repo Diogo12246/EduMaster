@@ -108,7 +108,7 @@ public class EduMasterOverViewController extends AnchorPane implements Initializ
             totalProfessors.setProgress(progressProfessors);
             totalCourses.setProgress(progressCourses);
 
-            revenueCount.setText(revenueCountEuro + " â‚¬");
+            revenueCount.setText(revenueCountEuro + " €");
             studentCount.setText(studentCountNumb + " / 10000");
             professorCount.setText(professorCountNumb + " / 1000");
             institutionCount.setText(institutionCountNumb + " / 100");
