@@ -4,14 +4,6 @@
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
-		<accessrules>
-			<accessrule kind="accessible" pattern="pt/diogo12246/*"/>
-			<accessrule kind="accessible" pattern="pt/diogo12246/**."/>
-			<accessrule kind="accessible" pattern="pt/diogo12246/*."/>
-			<accessrule kind="accessible" pattern="javafx/*."/>
-			<accessrule kind="accessible" pattern="javafx/**."/>
-			<accessrule kind="accessible" pattern="javafx/*"/>
-		</accessrules>
 	</classpathentry>
 	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>

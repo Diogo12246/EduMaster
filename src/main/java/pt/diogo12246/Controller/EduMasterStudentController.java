@@ -2,6 +2,7 @@ package pt.diogo12246.Controller;
 
 import pt.diogo12246.Model.Institution;
 import pt.diogo12246.Model.Student;
+import pt.diogo12246.ModelHibernate_DAO.StudentHibernate_DAO;
 import pt.diogo12246.Model_DAO.InstitutionDAO;
 import pt.diogo12246.Model_DAO.StudentDAO;
 import javafx.collections.FXCollections;
@@ -16,6 +17,7 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class EduMasterStudentController extends AnchorPane implements Initializable {
@@ -152,6 +154,7 @@ public class EduMasterStudentController extends AnchorPane implements Initializa
 
         studentInstitutionList = dao.getStudentInstitutionList(studentID);
         studentInstitutionListView.setItems(studentInstitutionList);
+        StudentHibernate_DAO studentHiber = new StudentHibernate_DAO();
 
     }
 

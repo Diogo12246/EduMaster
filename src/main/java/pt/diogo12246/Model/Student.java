@@ -1,7 +1,23 @@
 package pt.diogo12246.Model;
 
-public class Student {
-    private int id;
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="student")
+public class Student implements Serializable {
+    
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
+	private int id;
     private String studentFName;
     private String studentLName;
     private String studentEmail;
